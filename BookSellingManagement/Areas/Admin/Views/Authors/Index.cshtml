@@ -1,0 +1,101 @@
+﻿
+@using BookSellingManagement.Models.Authors
+@model IEnumerable<AuthorModel>
+@{
+    ViewData["title"] = "Quản lý tác giả";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+    <style>
+        .search-bar {
+            width: 300px;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-add {
+            margin-left: 50px;
+        }
+
+        .search-bar input {
+            flex: 1;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .table th {
+            text-align: center;
+        }
+
+    </style>
+
+    <div class="container">
+        <h2 class="text-center mt-4">Quản Lý Tác Giả</h2>
+
+        <!-- Add and Search Section -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <a class="btn btn-primary btn-add" asp-action="Create" asp-controller="Authors">Thêm Mới</a>
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên tác giả">
+                <button class="btn btn-primary ml-2" onclick="searchAuthor()">
+                    <i class="fas fa-search"></i> <!-- Font Awesome icon -->
+                </button>
+            </div>
+        </div>
+
+        <!-- Book Table -->
+        <div class="table-container">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead">
+                    <tr>
+                        <th>Mã Tác Giả</th>
+                        <th>Tên Tác Giả</th>
+                        <th>Giới Thiệu</th>
+                        <th>Ảnh</th>
+      
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="authorTable">
+                    <!-- Sample data, replace with dynamic content -->
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("Details", "Authors", new { AuthorId = item.AuthorId })">
+                                    @item.AuthorCode
+                                </a>
+                            </td>
+                            <td>@item.AuthorName</td>
+                            <td>@Html.Raw(@item.Information)</td>
+                            <td><img src="~/images/@item.Image" alt="@item.AuthorName" class="img-fluid" style="width: 50px; height: auto;"></td>
+                
+                           
+
+                            <td style="text-align: center;">
+                                <a asp-action="Edit" asp-controller="Authors" asp-route-AuthorId="@item.AuthorId" title="Sửa">
+                                    <i class="fas fa-pencil-alt text-warning"></i>
+                                </a>
+                            </td>
+                            <td style="text-align: center;">
+                                <a asp-action="Delete" asp-controller="Authors" asp-route-AuthorId="@item.AuthorId" title="Xóa">
+                                    <i class="fas fa-trash-alt text-danger"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+<partial name="_Paging" model="@pager" />

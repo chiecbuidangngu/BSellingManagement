@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar-left">
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <strong>HuTa</strong></div>
+        <ul class="nav flex-column">
+            <!-- Trang chủ -->
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="Home">
+                    <i class="fas fa-home"></i> Trang chủ
+                </a>
+            </li>
+
+            <!-- Dữ liệu -->
+            <li class="nav-item">
+                <a class="nav-link toggle-submenu" href="#">
+                    <i class="fas fa-database"></i> Dữ liệu
+                    <i class="fas fa-chevron-down float-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Books" asp-action="Index"><i class="fas fa-book"></i> Sách</a></li>
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Warehouse" asp-action="Index"><i class="fas fa-warehouse"></i> Kho</a></li>
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Authors" asp-action="Index"><i class="fas fa-user-edit"></i> Tác giả</a></li>
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Categories" asp-action="Index"><i class="fas fa-tags"></i> Thể loại</a></li>
+                </ul>
+            </li>
+
+            <!-- Quản lý -->
+            <li class="nav-item">
+                <a class="nav-link toggle-submenu" href="#">
+                    <i class="fas fa-tasks"></i> Quản lý
+                    <i class="fas fa-chevron-down float-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Employees" asp-action="Index"><i class="fas fa-users"></i> Nhân viên</a></li>
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Customers" asp-action="Index"><i class="fas fa-user"></i> Khách hàng</a></li>
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Orders" asp-action="Index"><i class="fas fa-shopping-cart"></i> Đơn hàng</a></li>
+                </ul>
+            </li>
+
+            <!-- Hệ thống -->
+            <li class="nav-item">
+                <a class="nav-link toggle-submenu" href="#">
+                    <i class="fas fa-cogs"></i> Hệ thống
+                    <i class="fas fa-chevron-down float-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Users" asp-action="Index"><i class="fas fa-user-shield"></i> Tài khoản người dùng</a></li>
+                    <li><a class="nav-link" asp-area="Admin" asp-controller="Roles" asp-action="Index"><i class="fas fa-user-tag"></i> Vai trò</a></li>
+                </ul>
+            </li>
+
+            <!-- Thống kê -->
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Admin" asp-controller="Statistical" asp-action="Index">
+                    <i class="fas fa-chart-bar"></i> Thống kê
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+        /* Style cho sidebar */
+        .sidebar-left {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #0d6efd;
+            color: #fff;
+            padding-top: 20px;
+        }
+
+            .sidebar-left a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+                display: block;
+                padding: 10px 20px;
+            }
+
+                .sidebar-left a:hover {
+                    background-color: #fff;
+                    color: #0d6efd;
+                }
+
+            .sidebar-left .nav-item {
+                padding: 5px 0;
+            }
+
+            .sidebar-left .logo {
+                text-align: center;
+                font-size: 24px;
+                padding: 10px 0;
+            }
+
+        .submenu {
+            display: none;
+            padding-left: 20px;
+            list-style: none; /* Loại bỏ chấm tròn */
+        }
+
+            .submenu .nav-link {
+                font-size: 14px;
+            }
+
+        .nav-item.open .submenu {
+            display: block;
+        }
+
+        .fas {
+            margin-right: 10px;
+        }
+
+        .float-right {
+            float: right;
+        }
+    </style>
+
+    <!-- jQuery và JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Toggle submenu
+            $('.toggle-submenu').click(function (e) {
+                e.preventDefault();
+                $(this).parent('.nav-item').toggleClass('open');
+            });
+        });
+    </script>
+</body>
+</html>

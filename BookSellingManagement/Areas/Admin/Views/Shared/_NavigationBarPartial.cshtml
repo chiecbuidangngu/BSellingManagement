@@ -1,0 +1,127 @@
+﻿<!-- User Menu -->
+<div class="user-menu" id="userMenu">
+    <img src="~/images/avt.jpg" alt="Avatar" class="avatar" id="userAvatar">
+    <button class="btn" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+    <button class="btn position-relative" id="notificationToggle">
+        <i class="fas fa-bell"></i>
+        <span class="badge badge-danger position-absolute top-0 end-0 translate-middle badge-rounded-pill">9</span>
+    </button>
+</div>
+<div class="sidebar" id="sidebar">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a asp-area="Admin" asp-controller="AccountProfile" asp-action="Index">Thông tin cá nhân</a>
+        </li>
+     
+        <li class="list-group-item"><a asp-area="Admin" asp-action="Index" asp-controller="ChangePassword">Đổi mật khẩu</a></li>
+        <li class="list-group-item"><a href="#">Đăng xuất</a></li>
+    </ul>
+</div>
+
+<!-- Thông báo (Notification) -->
+<div class="notification-dropdown" id="notificationDropdown">
+    <ul class="list-group">
+        <li class="list-group-item"><i class="fas fa-bullhorn"></i> [HuTa] Huyen Bui đã đặt đơn hàng thành công</li>
+        <li class="list-group-item"><i class="fas fa-bullhorn"></i> [HuTa] Huyen Bui đã đặt đơn hàng thành công</li>
+        <li class="list-group-item"><i class="fas fa-bullhorn"></i> [HuTa] Huyen Bui đã đặt đơn hàng thành công</li>
+        <li class="list-group-item"><i class="fas fa-bullhorn"></i> [HuTa] Huyen Bui đã đặt đơn hàng thành công</li>
+        <li class="list-group-item"><i class="fas fa-bullhorn"></i> [HuTa] Huyen Bui đã đặt đơn hàng thành công</li>
+    </ul>
+
+    <div class="text-center mt-2">
+        <a href="#" class="text-primary">Xem tất cả thông báo</a>
+    </div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        const notificationToggle = document.getElementById('notificationToggle');
+        const notificationDropdown = document.getElementById('notificationDropdown');
+
+        notificationToggle.addEventListener('click', function () {
+            notificationDropdown.classList.toggle('show');
+        });
+
+        // Đóng dropdown khi nhấn ra ngoài
+        document.addEventListener('click', function (event) {
+            if (!notificationDropdown.contains(event.target) && event.target !== notificationToggle) {
+                notificationDropdown.classList.remove('show');
+            }
+        });
+    });
+</script>
+
+<!-- CSS Styles -->
+<style>
+    .user-menu {
+        display: flex;
+        align-items: center;
+    }
+
+        .user-menu .btn {
+            margin: 10px;
+        }
+
+    .notification-dropdown {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 300px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 1000;
+    }
+
+        .notification-dropdown.show {
+            display: block;
+        }
+
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        border: none;
+    }
+
+        .list-group-item i {
+            color: #ff6b6b;
+        }
+
+        .list-group-item:hover {
+            background-color: #f7f7f7;
+        }
+
+    .notification-dropdown a {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 4px 6px;
+    }
+</style>
+<script>
+
+
+    $(document).ready(function () {
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('active');
+        });
+
+        sidebarClose.addEventListener('click', function () {
+            sidebar.classList.remove('active');
+        });
+    });
+</script>

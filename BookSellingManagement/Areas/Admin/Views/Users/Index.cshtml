@@ -1,0 +1,117 @@
+﻿
+
+@{
+    ViewData["title"] = "Quản lý người dùng";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Người Dùng</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .search-bar {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* Đẩy thanh tìm kiếm về bên phải */
+        }
+
+        .btn-add {
+            margin-left: 50px;
+        }
+
+        .search-bar input {
+            flex: 1;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Quản Lý Người Dùng</h2>
+
+        <!-- Add and Search Section -->
+        <div class="d-flex align-items-center mt-4">
+            <a class="btn btn-primary btn-add" asp-action="Create" asp-controller="Users">Thêm Mới</a>
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên người dùng">
+                <button class="btn btn-primary ml-2" onclick="searchUser()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- User Table -->
+        <div class="table-container">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead">
+                    <tr>
+  
+                        <th>Tên người dùng</th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Vai trò</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="userTable">
+                    @foreach (var usersWithRoles in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                <a asp-action="Detail" asp-controller="Users" asp-route-Id="@usersWithRoles.User.Id">
+                                    @usersWithRoles.User.UserName
+                                </a>
+                            </td>
+
+                            <td>@usersWithRoles.User.Email</td>
+                            <td>@usersWithRoles.User.PhoneNumber</td>
+                            <td>@usersWithRoles.RoleName</td>
+
+                            <td style="text-align: center;">
+                                <a asp-action="Edit" asp-controller="Users" asp-route-Id="@usersWithRoles.User.Id" title="Sửa">
+                                    <i class="fas fa-pencil-alt text-warning"></i> 
+                                </a>
+                            </td>
+                            <td style="text-align: center;">
+                                <a asp-action="Delete" asp-controller="Users" asp-route-Id="@usersWithRoles.User.Id" title="Xóa">
+                                    <i class="fas fa-trash-alt text-danger"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <partial name="_Paging" model="@pager" />
+
+
+    <script>
+    
+        function searchUser() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const tableRows = document.querySelectorAll('#userTable tr');
+            tableRows.forEach(row => {
+                const userName = row.cells[1].innerText.toLowerCase();
+                row.style.display = userName.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+   
+</body>

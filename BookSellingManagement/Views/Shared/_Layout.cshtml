@@ -1,0 +1,141 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Huta Book</title>
+
+   
+    <link rel="stylesheet" href="~/css/site.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container" style="margin: 0 auto;">
+            <a href="@Url.Action("Index", "Books")" class="logo">
+                <img src="~/images/logo_huta.png" alt="Huta Logo">
+            </a>
+
+           @await Html.PartialAsync("_NavigationBarPartial")
+
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+
+        @await Html.PartialAsync("_NotificationPartial")
+        @await Html.PartialAsync("_SupportPartial")
+
+        <div id="content">
+            @RenderBody()
+        </div>
+    </main>
+    
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+   <!-- <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>© 2024 Huta Book.</p>
+      
+        </div>
+    </footer>-->
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $('.AddToCart').click(function () {
+                var BookId = $(this).data("book_id");
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Add", "Cart")',
+                    data: { BookId: BookId },
+                    success: function (result) {
+                        if (result.success) {
+                            Swal.fire("Thành công", result.message || "Sách đã được thêm vào giỏ hàng!", "success");
+                        } else {
+                            Swal.fire("Thất bại", result.message || "Không thể thêm sách vào giỏ hàng.", "error");
+                        }
+                    },
+                    error: function () {
+                        Swal.fire("Lỗi", "Không thể kết nối đến server. Vui lòng thử lại sau.", "error");
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.AddToWishlist').click(function () {
+                var BookId = $(this).data("book_id");
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AddToWishlist", "Wishlist")',
+                    data: { bookId: BookId },
+                    success: function (result) {
+                        if (result.success) {
+                            Swal.fire("Thành công", result.message || "Sách đã được thêm vào danh sách yêu thích!", "success");
+                        } else {
+                            Swal.fire("Thất bại", result.message || "Không thể thêm sách vào danh sách yêu thích.", "error");
+                        }
+                    },
+                    error: function () {
+                        Swal.fire("Lỗi", "Không thể kết nối đến server. Vui lòng thử lại sau.", "error");
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Sự kiện click vào nút xóa
+            $('.RemoveFromWishlist').click(function (event) {
+                event.preventDefault(); // Ngừng hành động mặc định (reload trang)
+
+                var BookId = $(this).data("book_id"); // Lấy ID sách từ thuộc tính data-book_id
+                var $bookCard = $(this).closest('.book-card'); // Lấy thẻ .book-card chứa nút xóa
+
+                // Gửi yêu cầu AJAX đến server
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("RemoveFromWishlist", "Wishlist")',
+                    data: { bookId: BookId },
+                    success: function (result) {
+                        if (result.success) {
+                            // Hiển thị thông báo thành công
+                            Swal.fire("Thành công", result.message || "Sách đã được xóa khỏi danh sách yêu thích.", "success");
+
+                            // Loại bỏ thẻ sách khỏi giao diện ngay lập tức mà không cần tải lại trang
+                            $bookCard.fadeOut(500, function () {
+                                $bookCard.remove(); // Xóa hoàn toàn phần tử sau khi fadeOut
+                            });
+                        } else {
+                            // Hiển thị thông báo thất bại
+                            Swal.fire("Thất bại", result.message || "Không thể xóa sách khỏi danh sách yêu thích.", "error");
+                        }
+                    },
+                    error: function () {
+                        // Hiển thị thông báo lỗi nếu không thể kết nối
+                        Swal.fire("Lỗi", "Không thể kết nối đến server. Vui lòng thử lại sau.", "error");
+                    }
+                });
+            });
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+
+

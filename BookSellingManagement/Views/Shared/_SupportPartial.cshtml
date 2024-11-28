@@ -1,0 +1,100 @@
+﻿
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .support-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .support-button {
+            background-color: #34A853;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+            .support-button img {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+
+        .support-modal .modal-body {
+            text-align: center;
+        }
+
+            .support-modal .modal-body .contact-option {
+                margin-top: 10px;
+                font-size: 1.2em;
+            }
+
+        /* Style cho modal chat nhanh */
+        .chat-modal .modal-dialog {
+            max-width: 400px; /* Giới hạn chiều rộng của modal */
+            width: 100%; /* Chiều rộng 100% trong modal */
+        }
+
+        .chat-modal .modal-body {
+            text-align: center;
+        }
+
+        #chatWindow {
+            border: 1px solid #ccc;
+            height: 200px; /* Giảm chiều cao của cửa sổ chat */
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <!-- Support Container -->
+    <div class="support-container">
+        <!-- Zalo Support Button -->
+        <div class="support-button" data-toggle="modal" data-target="#supportModal">
+            Hỗ trợ
+        </div>
+    </div>
+
+    <!-- Support Modal -->
+    <div class="modal fade support-modal" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="supportModalLabel">Liên hệ ngay với HuTa bạn nhé!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-option">
+                        <p><strong>Tổng đài hỗ trợ:</strong> 1900.5454.82 (nhánh 5)</p>
+                        <p><em>(8AM - 22PM, từ T2 - CN)</em></p>
+                    </div>
+                    <div class="contact-option">
+                        <p><strong>Hotline:</strong> 087.773.6289</p>
+                        <p><em>(8AM - 22PM, từ T2 - CN)</em></p>
+                    </div>
+
+                    <div class="contact-option">
+                        <a href="https://www.facebook.com/chiecbuidangngu/" target="_blank" class="btn btn-primary btn-block">Chat bằng Messenger</a>
+                    </div>
+                    <div class="contact-option">
+                        <a href="https://zalo.me/0868131604" target="_blank" class="btn btn-info btn-block">Chat qua Zalo</a>
+                    </div>
+         
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

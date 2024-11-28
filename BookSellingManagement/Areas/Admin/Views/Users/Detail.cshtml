@@ -1,0 +1,46 @@
+﻿@model BookSellingManagement.Models.AppUserModel
+
+<title>Chi Tiết Người Dùng</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<form asp-action="Detail" asp-route-id="@Model.Id" enctype="multipart/form-data">
+<div class="container">
+    <h2 class="text-center mt-4">Thông Tin Chi Tiết Người Dùng</h2>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Tên Người Dùng:</label>
+            <input class="form-control" disabled value="@Model.UserName" />
+        </div>
+        <div class="form-group col-md-6">
+            <label>Email:</label>
+            <input class="form-control" disabled value="@Model.Email" />
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Số Điện Thoại:</label>
+            <input class="form-control" disabled value="@Model.PhoneNumber" />
+        </div>
+
+            <div class="form-group col-md-6">
+                <label>Vai trò</label>
+                <select asp-for="RoleId" disabled class="form-control" asp-items="ViewBag.Roles">
+                </select>
+               
+            </div>
+    </div>
+    <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Họ Và Tên:</label>
+                <input class="form-control" disabled value="@Model.FullName" />
+            </div>
+        <div class="form-group col-md-6">
+            <label>Địa Chỉ:</label>
+            <input class="form-control" disabled value="@Model.Address" />
+        </div>
+    </div>
+
+    <div class="text-left mt-4">
+        <a class="btn btn-primary" asp-action="Index" asp-controller="Users">Quay Lại</a>
+    </div>
+</div>
+</form>

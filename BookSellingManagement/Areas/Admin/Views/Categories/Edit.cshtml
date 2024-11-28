@@ -1,0 +1,66 @@
+﻿@model BookSellingManagement.Models.Categories.CategoryModel
+
+
+<title>Sửa Thông Tin Thể Loại</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+<div class="container">
+    <h2 class="text-center mt-4">Sửa Thông Tin Thể Loại</h2>
+
+    <!-- Form to Add New Book -->
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="CategoryId" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label>Tên Thể Loại</label>
+                <input asp-for="CategoryName" class="form-control">
+                <span asp-validation-for="CategoryName" class="text-danger" />
+            </div>
+
+
+        </div>
+        <div class="form-row">
+
+
+            <div class="form-group col-md-6">
+                <label>Mô Tả</label>
+                <textarea asp-for="Description" class="form-control" rows="5" id="Description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="custom-button-group">
+
+            <button class="btn btn-primary">Lưu</button>
+        </div>
+        <div class="text-left mt-4">
+            <a class="btn btn-primary" asp-action="Index" asp-controller="Categories">Quay Lại</a>
+        </div>
+    </form>
+</div>
+
+
+<!-- JavaScript and Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+
+}
+<script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('Description');
+
+</script>
+
+
+}

@@ -1,0 +1,69 @@
+﻿
+
+<vc:categories></vc:categories>
+
+<div class="auth-buttons">
+    @if (User.Identity?.IsAuthenticated ?? false)
+    {
+     
+        <div class="user-menu" id="userMenu">
+            <img src="~/images/avt.jpg" alt="Avatar" class="avatar" id="userAvatar">
+            <button class="btn" id="sidebarToggle" aria-label="Toggle sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="@Url.Action("Index", "Wishlist")" class="btn border" title="Yêu thích">
+                <i class="fas fa-heart text-primary"></i>
+            </a>
+            <a href="@Url.Action("Index", "Cart")" class="btn border" title="Giỏ hàng">
+                <i class="fas fa-shopping-cart text-primary"></i>
+            </a>
+        </div>
+       
+    }
+    else
+    {
+
+        <a class="btn btn-primary me-2" asp-controller="Account" asp-action="Login">Đăng nhập</a>
+        <a class="btn btn-primary me-2" asp-controller="Account" asp-action="Register">Đăng Ký</a>
+    }
+</div>
+
+
+
+<div class="sidebar" id="sidebar">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="@Url.Action("UpdateAccount", "Account")">Thông tin cá nhân</a>
+        </li>
+        <li class="list-group-item">
+            <a href="@Url.Action("MyOrders", "Account")">Đơn hàng của tôi</a>
+        </li>
+        <li class="list-group-item"> <a href="@Url.Action("ChangePassword", "Account")">Đổi mật khẩu</a></li>
+        <li class="list-group-item">
+            <a href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+        </li>
+
+    </ul>
+</div>
+<script>
+    $(document).ready(function () {
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('active');
+        });
+
+        sidebarClose.addEventListener('click', function () {
+            sidebar.classList.remove('active');
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+
+
+

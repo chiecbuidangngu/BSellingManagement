@@ -1,0 +1,64 @@
+﻿
+<style>
+    .search-bar {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin-left: auto; /* Đẩy thanh tìm kiếm về bên phải */
+    }
+
+        .search-bar input {
+            flex: 1;
+        }
+
+    .table-container {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+</style>
+
+<div class="container">
+    <h2 class="text-center mt-4">Đơn Hàng</h2>
+
+    <!-- Add and Search Section -->
+   
+    <div class="d-flex align-items-center mt-4">
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên mã đơn hàng">
+            <button class="btn btn-primary ml-2" onclick="searchCustomer()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Customer Table -->
+    <div class="table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Mã Sách</th>
+                    <th>Ảnh</th>
+                    <th>Tên Sách</th>
+                    <th>Số Lượng</th>
+          
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Model)
+                {
+                    <tr>
+                        <td>@book.BookCode</td>
+                        <td><img src="~/images/@book.Image" alt="@book.BookName" class="img-fluid" style="width: 50px; height: auto;"></td>
+                        <td>@book.BookName</td>
+                        <td>@book.Quantity</td>
+            
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+

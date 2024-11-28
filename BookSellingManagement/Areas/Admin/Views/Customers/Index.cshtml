@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewData["title"] = "Quản lý khách hàng";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+    <style>
+        .search-bar {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin-left: auto; 
+        }
+
+            .search-bar input {
+                flex: 1;
+            }
+
+        .table-container {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        td{
+            text-align:center;
+        }
+
+    </style>
+
+    <div class="container">
+        <h2 class="text-center mt-4">Quản Lý Khách Hàng</h2>
+
+        <!-- Add and Search Section -->
+        <div class="d-flex align-items-center mt-4">
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên khách hàng">
+                <button class="btn btn-primary ml-2" onclick="searchCustomer()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Customer Table -->
+        <div class="table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tên tài khoản</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Doanh số</th>
+                    <th>Số đơn hàng</th>
+                    <th>Tổng sách</th>
+                    <th> Thể loại yêu thích</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model)
+                {
+                    <tr>
+                        <td>@customer.UserName</td>
+                        <td>@customer.Username</td>
+                        <td>@customer.PhoneNumber</td>
+
+                        <td>@customer.Revenue.ToString("N0").Replace(",", ".")</td>
+                        <td>
+                            <a href="@Url.Action("Orders", "Customers", new { username = customer.Username })">
+                                @customer.TotalOrders
+                            </a>
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Books", "Customers", new { username = customer.Username })">
+                                @customer.TotalBooks
+                            </a>
+                        </td>
+                        <td>
+                            <p class="badge bg-success rounded-pill">Ngôn tình</p>
+
+                        </td>
+                        
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+<partial name="_Paging" model="@pager" />
+
+    <script>
+        // Function to search customers by name
+        function searchCustomer() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const tableRows = document.querySelectorAll('#customerTable tr');
+            tableRows.forEach(row => {
+                const customerName = row.cells[1].innerText.toLowerCase();
+                row.style.display = customerName.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+

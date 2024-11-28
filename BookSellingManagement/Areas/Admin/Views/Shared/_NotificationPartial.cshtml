@@ -1,0 +1,51 @@
+﻿<!-- Toast Notification -->
+<style>
+    #toast.toast-success .toast-body {
+        background-color: #198754 !important;
+        color: white;
+    }
+
+    #toast.toast-danger .toast-body {
+        background-color: #dc3545 !important;
+        color: white;
+    }
+
+</style>
+
+<div id="toastNotification" class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto" id="toastTitle">Thông báo</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body" id="toastMessage">
+            <!-- Toast message content will be dynamically updated here -->
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        
+        // Display TempData success or error messages, if present
+        var successMessage = '@Html.Raw(TempData["SuccessMessage"])';
+        var errorMessage = '@Html.Raw(TempData["ErrorMessage"])';
+
+        if (successMessage && successMessage.length > 0) {
+            $('#toastTitle').text('Thành công!');
+            $('#toastMessage').text(successMessage);
+            $('#toast').removeClass('toast-danger').addClass('toast-success');
+            var toastElement = document.getElementById('toast');
+            var toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        } else if (errorMessage && errorMessage.length > 0) {
+            $('#toastTitle').text('Lỗi!');
+            $('#toastMessage').text(errorMessage);
+            $('#toast').removeClass('toast-success').addClass('toast-danger');
+            var toastElement = document.getElementById('toast');
+            var toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        }
+    });
+
+</script>

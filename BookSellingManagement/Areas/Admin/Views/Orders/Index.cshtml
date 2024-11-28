@@ -1,0 +1,150 @@
+﻿@using BookSellingManagement.Models.Book
+@using BookSellingManagement.Models.OrderModel
+
+@model IEnumerable<OrderModel>
+@{
+    ViewData["title"] = "Quản lý đơn hàng";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Đơn Hàng</title>
+
+    <style>
+        .search-bar {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* Đẩy thanh tìm kiếm về bên phải */
+        }
+
+            .search-bar input {
+                flex: 1;
+            }
+
+        .table-container {
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Quản Lý Đơn Hàng</h2>
+
+        <!-- Add and Search Section -->
+        <div class="d-flex align-items-center mt-4">
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên sách">
+                <button class="btn btn-primary ml-2" onclick="searchBook()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Book Table -->
+        <div class="table-container">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="thead">
+                    <tr>
+
+                        <th>Mã đơn hàng</th>
+                        <th>Trạng thái</th>
+                        <th>Email</th>
+                        <th>Điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Ngày đặt </th>
+                        <th>Tổng tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="bookTable">
+                    <!-- Sample data, replace with dynamic content -->
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("DetailOrder", "Orders", new { orderId = item.OrderId })" class="text-primary">
+                                    @item.OrderCode
+                                </a>
+                            </td>
+                            <td>
+                                @if (item.Status == 1)
+                                {
+                                    <span class="text-danger">Đơn hàng mới</span>
+                                }
+                                else if (item.Status == 2)
+                                {
+                                    <span class="text-success">Đã thanh toán</span>
+                                }
+                                else if (item.Status == 3)
+                                {
+                                    <span class="text-warning">Đã hủy</span>
+                                }
+                                else if (item.Status == 4)
+                                {
+                                    <span class="text-primary">Đang giao hàng</span>
+                                }
+                                else if (item.Status == 5)
+                                {
+                                    <span class="text-success">Giao thành công</span>
+                                }
+                            </td>
+                            <td>@item.Username</td>
+                            <td>@item.PhoneNumber</td>
+                            <td>@item.Address</td>
+                            <td>@item.CreateDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                            <td>@item.TotalAmount.ToString("N0", new System.Globalization.CultureInfo("vi-VN"))</td>
+
+                           
+
+                            <td>
+                                @if (item.Status == 1 || item.Status == 2)
+                                {
+                                   
+                                    <a asp-action="ConfirmShipping" asp-controller="Orders" asp-route-OrderId="@item.OrderId" title="Xác nhận đã gửi hàng">
+                                        <i class="bi bi-check text-success" style="font-size: 1.5rem; cursor: pointer;"></i>
+                                    </a>
+                                }
+                                @if (item.Status == 3)
+                                {
+
+                                    <a asp-action="Delete" asp-controller="Orders" asp-route-OrderId="@item.OrderId" title="Xóa đơn hàng">
+                                        <i class="fas fa-trash-alt text-danger" style="font-size: 1rem; cursor: pointer;"></i>
+                                    </a>
+                                }
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <partial name="_Paging" model="@pager" />
+
+
+    <script>
+        function searchBook() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const tableRows = document.querySelectorAll('#bookTable tr');
+            tableRows.forEach(row => {
+                const bookName = row.cells[1].innerText.toLowerCase();
+                row.style.display = bookName.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+    
+</body>
+

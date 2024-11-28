@@ -1,0 +1,16 @@
+﻿@using BookSellingManagement.Models.Categories
+@model IEnumerable<CategoryModel>
+
+<nav class="menu">
+    <ul class="nav">
+        @foreach (var item in Model)
+        {
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index" asp-controller="Category"
+                   asp-route-Slug="@item.CategorySlug" asp-route-CategoryId="@item.CategoryId">
+                    @item.CategoryName
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

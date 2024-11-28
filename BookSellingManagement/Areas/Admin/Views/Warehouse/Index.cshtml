@@ -1,0 +1,137 @@
+﻿@using BookSellingManagement.Models.Book
+@using BookSellingManagement.Models.Categories
+@using BookSellingManagement.Models.Authors
+@model IEnumerable<BookModel>
+@{
+    ViewData["title"] = "Quản lý kho";
+    Paginate pager = new Paginate();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<style>
+    .search-bar {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+        .search-bar input {
+            flex: 1;
+        }
+
+    .table-container {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .table th {
+        text-align: center;
+    }
+
+    .low-stock {
+        color: red !important;
+        font-weight: bold;
+    }
+
+</style>
+
+<div class="container">
+    <h2 class="text-center mt-4">Quản Lý Kho</h2>
+
+    <!-- Add and Search Section -->
+    <div class="d-flex align-items-center mt-4">
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên sách">
+            <button class="btn btn-primary ml-2" onclick="searchBook()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Book Table -->
+    <div class="table-container">
+        <table class="table table-bordered table-striped mt-3">
+            <thead class="thead">
+                <tr>
+                    <th>Mã Sách</th>
+                    <th>Tên Sách</th>
+                    <th>Số Lượng Nhập</th>
+                    <th>Số Lượng Đã Bán</th>
+                    <th>Số Lượng Còn Lại</th>
+                    <th>Vị trí</th>
+                    <th>Ảnh</th>
+                    <th></th>
+                </tr>
+            </thead>
+          
+            <tbody id="bookTable">
+                @foreach (var item in Model)
+                {
+                    // Kiểm tra số lượng còn lại
+                    var stockClass = item.RemainingQuantity <= 10 ? "low-stock" : "high-stock";
+
+                    <tr>
+                        <td>@item.BookCode</td>
+                        <td>@item.BookName</td>
+                        <td>@item.ImportedQuantity</td>
+                        <td>@item.SoldQuantity</td>
+                        <td class="@stockClass">@item.RemainingQuantity</td> <!-- Áp dụng class cho số lượng còn lại -->
+                        <td>@item.Location</td>
+                        <td><img src="~/images/@item.Image" alt="@item.BookName" class="img-fluid" style="width: 50px; height: auto;"></td>
+
+                        <td style="text-align: center;">
+                            <a title="Nhập thêm sách" data-toggle="modal" data-target="#quantityModal-@item.BookId">
+                                <i class="fas fa-plus text-warning" style="font-size: 1.5rem; cursor: pointer;"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+<!-- Modal để nhập số lượng sách (Dynamic Modal) -->
+@foreach (var item in Model)
+{
+    <div class="modal fade" id="quantityModal-@item.BookId" tabindex="-1" aria-labelledby="quantityModalLabel-@item.BookId" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quantityModalLabel-@item.BookId">Thêm số lượng sách - @item.BookName</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" asp-action="AddQuantity" asp-controller="Warehouse" asp-route-BookId="@item.BookId">
+                        <div class="form-group">
+                            <label for="quantity">Số lượng</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity" value="1" min="1" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Thêm vào kho</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+}
+<partial name="_Paging" model="@pager" />
+<script>
+    function searchBook() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const tableRows = document.querySelectorAll('#bookTable tr');
+        tableRows.forEach(row => {
+            const bookName = row.cells[1].innerText.toLowerCase();
+            row.style.display = bookName.includes(input) ? '' : 'none';
+        });
+    }
+</script>

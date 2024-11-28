@@ -1,0 +1,70 @@
+﻿@model BookSellingManagement.Models.Authors.AuthorModel
+
+
+<title>Sửa Thông Tin Tác Giả</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+<div class="container">
+    <h2 class="text-center mt-4">Sửa Thông Tin Sách</h2>
+
+    <!-- Form to Add New Book -->
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="AuthorId" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label>Tên Tác Giả</label>
+                <input asp-for="AuthorName" class="form-control">
+                <span asp-validation-for="AuthorName" class="text-danger" />
+            </div>
+            <div class="form-group col-md-6">
+                <label>Hình Ảnh</label>
+                <input asp-for="ImageUpload" class="form-control">
+                <span asp-validation-for="ImageUpload" class="text-danger"></span>
+                <img src="~/images/@Model.Image" alt="@Model.AuthorName" class="img-fluid" style="width: 50px; height: auto;">
+
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Mô Tả</label>
+                <textarea asp-for="Information" class="form-control" rows="5" id="Information"></textarea>
+                <span asp-validation-for="Information" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="custom-button-group">
+
+            <button class="btn btn-primary">Lưu</button>
+        </div>
+        <div class="text-left mt-4">
+            <a class="btn btn-primary" asp-action="Index" asp-controller="Authors">Quay Lại</a>
+        </div>
+    </form>
+</div>
+
+
+<!-- JavaScript and Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+
+}
+<script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('Information');
+
+</script>
+
+
+}

@@ -1,0 +1,113 @@
+﻿@model BookSellingManagement.Models.Book.BookModel
+
+
+<title>Sửa Thông Tin Sách</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+<div class="container">
+    <h2 class="text-center mt-4">Sửa Thông Tin Sách</h2>
+
+
+
+    <!-- Form to Add New Book -->
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <!-- Hidden input for BookId -->
+        <input type="hidden" asp-for="BookId" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label>Tên Sách</label>
+                <input asp-for="BookName" class="form-control">
+                <span asp-validation-for="BookName" class="text-danger" />
+            </div>
+            <div class="form-group col-md-6">
+                <label>Vị Trí</label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger" />
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Số Lượng</label>
+                <input asp-for="ImportedQuantity" type="number" class="form-control">
+                <span asp-validation-for="ImportedQuantity" class="text-danger" />
+
+            </div>
+            <div class="form-group col-md-6">
+                <label>Tác Giả</label>
+                <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.Authors" required>
+                    <option value="">Chọn Tác Giả</option>
+                </select>
+                <span asp-validation-for="AuthorId" class="text-danger" />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Giá Bán</label>
+                <input asp-for="Price" type="decimal" class="form-control">
+                <span asp-validation-for="Price" class="text-danger" />
+
+
+
+            </div>
+            <div class="form-group col-md-6">
+                <label>Thể Loại</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories" required>
+                    <option value="">Chọn Thể Loại</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label>Hình Ảnh</label>
+                <input asp-for="ImageUpload" class="form-control">
+                <span asp-validation-for="ImageUpload" class="text-danger"></span>
+                <img src="~/images/@Model.Image" alt="@Model.BookName" class="img-fluid" style="width: 50px; height: auto;">
+
+            </div>
+            <div class="form-group col-md-6">
+                <label>Mô Tả</label>
+                <textarea asp-for="Description" class="form-control" rows="5" id="Description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+        <div class="custom-button-group">
+
+            <button class="btn btn-primary">Lưu</button>
+        </div>
+        <div class="text-left mt-4">
+            <a class="btn btn-primary" asp-action="Index" asp-controller="Books">Quay Lại</a>
+        </div>
+    </form>
+</div>
+
+
+<!-- JavaScript and Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+
+}
+<script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+<script>
+    CKEDITOR.replace('Description');
+
+</script>
+
+
+}

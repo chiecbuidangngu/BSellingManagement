@@ -1,0 +1,91 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityRole>
+@{
+    ViewData["title"] = "Quản lý Vai Trò";
+}
+
+    <style>
+        .search-bar {
+            width: 300px;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-add {
+            margin-left: 50px;
+        }
+
+        .search-bar input {
+            flex: 1;
+        }
+
+        .table-container {
+            max-width: 300px; /* Giới hạn chiều rộng của bảng */
+            margin: 0 auto; /* Căn giữa bảng */
+        }
+
+        table {
+            width: 100%; /* Đảm bảo bảng vẫn chiếm toàn bộ vùng của container */
+        }
+
+    </style>
+
+    <div class="container">
+        <h2 class="text-left mt-4">Quản Lý Vai Trò</h2>
+
+        <!-- Add and Search Section -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <a class="btn btn-primary btn-add" asp-action="Create" asp-controller="Roles">Thêm Mới</a>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo tên vai trò">
+                <button class="btn btn-primary ml-2" onclick="searchCategory()">
+                    <i class="fas fa-search"></i> <!-- Font Awesome icon -->
+                </button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="table table-bordered table-striped mt-3" id="categoryTable">
+                <thead class="thead">
+                    <tr>
+                        <th>Tên Vai Trò</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="bookTable">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                        <td style="text-align: center;">
+                                <a asp-action="Edit" asp-controller="Roles" asp-route-Id="@item.Id" title="Sửa">
+                                    <i class="fas fa-pencil-alt text-warning"></i>
+                                </a>
+                            </td>
+                        <td style="text-align: center;">
+                                <a asp-action="Delete" asp-controller="Roles" asp-route-Id="@item.Id" title="Xóa">
+                                    <i class="fas fa-trash-alt text-danger"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+</div>
+
+
+    <script>
+        // Function to search categories by name
+        function searchCategory() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const tableRows = document.querySelectorAll('#categoryTable tbody tr'); // Lọc chỉ các hàng trong tbody
+            tableRows.forEach(row => {
+                // Sử dụng row.cells[0] để lấy tên vai trò (cột đầu tiên)
+                const categoryName = row.cells[0].innerText.toLowerCase();
+                row.style.display = categoryName.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+

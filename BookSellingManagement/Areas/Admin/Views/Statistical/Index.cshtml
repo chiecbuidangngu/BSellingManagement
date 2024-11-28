@@ -1,0 +1,379 @@
+﻿@using BookSellingManagement.Models.Book
+@using BookSellingManagement.Models.Categories
+@using BookSellingManagement.Models.Authors
+@model IEnumerable<BookModel>
+@{
+    ViewData["title"] = "Dashboard";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        /* Adjust the size of the pie charts to make them a little bigger */
+        #chartCategory, #chartOrderStatus {
+            max-width: 90% !important; /* Increase the width */
+            height: 350px !important; /* Increase the height */
+            margin: 0 auto; /* Center the charts */
+        }
+
+        canvas {
+            max-width: 100%; /* Đảm bảo biểu đồ co giãn theo cột */
+            max-height: 500px; /* Giới hạn chiều cao biểu đồ */
+        }
+
+        .chart-container {
+            padding: 15px; /* Tạo khoảng cách giữa các biểu đồ */
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+      <div class="container mt-5">
+        <h1 class="text-center mb-4">Thống kê </h1>
+
+        <!-- Cards Row -->
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Số lượng hàng tồn
+                                </div>
+                   
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="stockQuantity"> @ViewBag.CountStock</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Số lượng bán ra
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="soldQuantity">@ViewBag.CountSold</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                    Tổng doanh thu
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="totalRevenue">@ViewBag.TotalRevenue.ToString("N0", new System.Globalization.CultureInfo("vi-VN"))</div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add the new card for "Số lượng đơn hàng" -->
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                    Số lượng đơn hàng
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="orderQuantity">@ViewBag.CountOrders</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- Filter Options -->
+<div class="row mb-4">
+    <div class="col-md-2">
+        <label for="filterType">Loại thời gian:</label>
+        <select id="filterType" class="form-control">
+            <option value="date">Ngày</option>
+            <option value="month">Tháng</option>
+            <option value="year">Năm</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label for="fromDate">Từ ngày:</label>
+        <input type="date" id="fromDate" class="form-control" />
+    </div>
+    <div class="col-md-2">
+        <label for="toDate">Đến ngày:</label>
+        <input type="date" id="toDate" class="form-control" />
+    </div>
+    <div class="col-md-2">
+        <label for="month">Chọn tháng:</label>
+        <select id="month" class="form-control">
+            <option>Tháng 1</option>
+            <option>Tháng 2</option>
+            <option>Tháng 3</option>
+            <!-- Thêm các tháng khác -->
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label for="year">Chọn năm:</label>
+        <select id="year" class="form-control">
+            <option>2023</option>
+            <option>2024</option>
+            <!-- Thêm các năm khác -->
+        </select>
+    </div>
+<div class="col-md-2 d-flex align-items-end">
+    <button class="btn btn-primary" id="btnFilter">Lọc</button>
+    <button class="btn btn-secondary ml-2" id="btnReset">Làm mới</button>
+</div>
+
+
+
+</div>
+
+    
+       
+
+        <!-- Row 1: Revenue and Top Products Charts -->
+        <div class="row">
+            
+                <div class="card">
+                    <div class="card-header">Top 10 sách bán chạy</div>
+                    <div class="card-body">
+                        <canvas id="topProductsChart"></canvas>
+                    </div>
+                </div>
+         
+         
+            
+        </div>
+ <!-- Charts Row -->
+        <div class="row">
+            <div class="col-md-6">
+                <h6 class="text-center">Doanh thu các tháng</h6>
+                <canvas id="chartRevenue"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h6 class="text-center">Số lượng bán các tháng</h6>
+                <canvas id="chartQuantity"></canvas>
+            </div>
+        </div>
+
+        <!-- Pie Charts Row -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h6 class="text-center">Thống kê sách trong kho theo thể loại</h6>
+                <canvas id="chartCategory"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h6 class="text-center">Thống kê số lượng đơn hàng theo trạng thái</h6>
+                <canvas id="chartOrderStatus"></canvas>
+            </div>
+        </div>
+
+
+    </div>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Scripts Section -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            var bookNames = @Html.Raw(Json.Serialize(ViewBag.TopBooks));
+            var booksSold = @Html.Raw(Json.Serialize(ViewBag.TopBooksSold));
+
+            var ctx = document.getElementById('topProductsChart').getContext('2d');
+            var topProductsChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: bookNames,
+                    datasets: [{
+                        label: 'Số lượng bán',
+                        data: booksSold,
+                        backgroundColor: '#007bff',
+                        borderColor: '#007bff',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                    responsive: true
+                }
+            });
+
+            var monthlyRevenue = @Html.Raw(Json.Serialize(ViewBag.MonthlyRevenue));
+            var monthlySales = @Html.Raw(Json.Serialize(ViewBag.MonthlySales));
+
+            var months = monthlySales.map(function (item) {
+                return "Tháng " + item.Month;
+            });
+
+            var revenues = monthlyRevenue;
+            var salesQuantities = monthlySales.map(function (item) {
+                return item.TotalQuantity;
+            });
+
+            // Doanh thu theo tháng
+            var ctxRevenue = document.getElementById('chartRevenue').getContext('2d');
+            var chartRevenue = new Chart(ctxRevenue, {
+                type: 'bar',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: 'Doanh thu',
+                        data: revenues,
+                        backgroundColor: '#4e73df',
+                        borderColor: '#4e73df',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Số lượng bán theo tháng
+            var ctxQuantity = document.getElementById('chartQuantity').getContext('2d');
+            var chartQuantity = new Chart(ctxQuantity, {
+                type: 'bar',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: 'Số lượng bán',
+                        data: salesQuantities,
+                        backgroundColor: '#1cc88a',
+                        borderColor: '#1cc88a',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Thống kê thể loại
+            var categoryNames = @Html.Raw(Json.Serialize(ViewBag.CategoryNames));
+            var categoryCounts = @Html.Raw(Json.Serialize(ViewBag.CategoryCounts));
+
+            var ctxCategory = document.getElementById('chartCategory').getContext('2d');
+            var chartCategory = new Chart(ctxCategory, {
+                type: 'pie',
+                data: {
+                    labels: categoryNames,
+                    datasets: [{
+                        data: categoryCounts,
+                        backgroundColor: [
+                            '#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b', '#858796', '#5a5c69'
+                        ],
+                        hoverOffset: 10 // Hiệu ứng khi hover
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                    },
+                }
+            });
+
+            // Lấy dữ liệu từ ViewBag
+            var orderStatuses = @Html.Raw(Json.Serialize(ViewBag.OrderStatuses)); // Các trạng thái đơn hàng
+            var orderCounts = @Html.Raw(Json.Serialize(ViewBag.OrderCounts)); // Số lượng đơn hàng ứng với từng trạng thái
+
+            // Khởi tạo biểu đồ
+            var ctxOrderStatus = document.getElementById('chartOrderStatus').getContext('2d');
+            var chartOrderStatus = new Chart(ctxOrderStatus, {
+                type: 'pie', // Biểu đồ tròn
+                data: {
+                    labels: orderStatuses, // Tên các trạng thái đơn hàng
+                    datasets: [{
+                        label: 'Số lượng đơn hàng',
+                        data: orderCounts, // Số lượng ứng với từng trạng thái
+                        backgroundColor: [
+                            '#4e73df', // Màu trạng thái 1
+                            '#1cc88a', // Màu trạng thái 2
+                            '#36b9cc', // Màu trạng thái 3
+                            '#f6c23e', // Màu trạng thái 4
+                            '#e74a3b', // Màu trạng thái 5
+                        ],
+                        hoverOffset: 10 // Hiệu ứng khi hover
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (tooltipItem) {
+                                    const label = tooltipItem.label || '';
+                                    const value = tooltipItem.raw || 0;
+                                    return `${label}: ${value} đơn hàng`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+  }
+  <script>
+        // Xử lý thay đổi loại thời gian lọc
+        document.getElementById('filterType').addEventListener('change', function () {
+            const type = this.value;
+            const fromDate = document.getElementById('fromDate');
+            const toDate = document.getElementById('toDate');
+            const month = document.getElementById('month');
+            const quarter = document.getElementById('quarter');
+            const year = document.getElementById('year');
+
+            fromDate.style.display = type === 'date' ? 'block' : 'none';
+            toDate.style.display = type === 'date' ? 'block' : 'none';
+            month.style.display = type === 'month' ? 'block' : 'none';
+            quarter.style.display = type === 'quarter' ? 'block' : 'none';
+            year.style.display = type === 'year' ? 'block' : 'none';
+        });
+
+  </script>
+</body>
+</html>
