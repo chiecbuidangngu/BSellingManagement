@@ -18,8 +18,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Huyen\Downloads\BookSellingManagement - 2711\BookSellingManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Areas/Admin/Views/AccountProfile/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFByb2ZpbGVcSW5kZXguY3NodG1s
+[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Areas/Admin/Views/Account/UpdateAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxVcGRhdGVBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Areas/Admin/Views/Authors/Create.cshtml]
@@ -194,10 +194,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Account/MyOrders.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNeU9yZGVycy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -218,6 +214,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Books/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -236,6 +236,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Checkout/VNPayPayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcVk5QYXlQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/MyOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlPcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/MyOrder/OrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlPcmRlclxPcmRlckRldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Shared/Components/Categories/Default.cshtml]
@@ -264,6 +272,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Shared/_NotificationPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Shared/_PagingUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdpbmdVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Huyen/Downloads/BookSellingManagement - 2711/BookSellingManagement/Views/Shared/_SupportPartial.cshtml]

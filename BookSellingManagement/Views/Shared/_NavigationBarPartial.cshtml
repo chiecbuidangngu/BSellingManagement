@@ -1,13 +1,20 @@
-﻿
+﻿<vc:categories></vc:categories>
 
-<vc:categories></vc:categories>
+<i class="fas fa-search search-icon" id="searchIcon" aria-label="Tìm kiếm"></i>
+
+
+<div class="search-container mb-4" id="searchContainer">
+    <form asp-controller="Books" asp-action="Search" method="get" class="d-flex">
+        <input type="search" class="form-control" placeholder="Tìm sách..." name="searchTerm">
+    </form>
+</div>
 
 <div class="auth-buttons">
     @if (User.Identity?.IsAuthenticated ?? false)
     {
      
         <div class="user-menu" id="userMenu">
-            <img src="~/images/avt.jpg" alt="Avatar" class="avatar" id="userAvatar">
+           
             <button class="btn" id="sidebarToggle" aria-label="Toggle sidebar">
                 <i class="fas fa-bars"></i>
             </button>
@@ -36,7 +43,7 @@
             <a href="@Url.Action("UpdateAccount", "Account")">Thông tin cá nhân</a>
         </li>
         <li class="list-group-item">
-            <a href="@Url.Action("MyOrders", "Account")">Đơn hàng của tôi</a>
+            <a href="@Url.Action("Index", "MyOrder")">Đơn hàng của tôi</a>
         </li>
         <li class="list-group-item"> <a href="@Url.Action("ChangePassword", "Account")">Đổi mật khẩu</a></li>
         <li class="list-group-item">
@@ -62,8 +69,15 @@
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Bắt sự kiện nhấn vào biểu tượng tìm kiếm
+        const searchIcon = document.getElementById('searchIcon');
+        const searchContainer = document.getElementById('searchContainer');
 
+        searchIcon.addEventListener('click', function () {
+            searchContainer.classList.toggle('active'); // Hiển thị/ẩn ô tìm kiếm
+        });
+    });
 
-
-
-
+</script>

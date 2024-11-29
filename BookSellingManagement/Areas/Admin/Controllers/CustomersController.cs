@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using BookSellingManagement.Repository;
 using Microsoft.EntityFrameworkCore;
+using BookSellingManagement.Models;
 
 namespace BookSellingManagement.Areas.Admin.Controllers
 {
@@ -16,26 +17,51 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             _dataContext = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int pg = 1)
         {
-            var customers = (from order in _dataContext.Orders
-                             where order.Status != 3 // Loại trừ các đơn hàng có trạng thái là 3 (đã hủy)
-                             join user in _dataContext.Users on order.Username equals user.Email // Join với bảng Users
-                             join orderDetail in _dataContext.OrderDetails on order.OrderCode equals orderDetail.OrderCode into orderDetails
-                             from detail in orderDetails.DefaultIfEmpty()
-                             group new { order, detail, user } by order.Username into grouped
-                             select new
-                             {
-                                 Username = grouped.Key,
-                                 UserName = grouped.FirstOrDefault().user.UserName, // Lấy tên người dùng đầu tiên trong nhóm
-                                 PhoneNumber = grouped.FirstOrDefault().user.PhoneNumber, // Lấy số điện thoại người dùng đầu tiên trong nhóm
-                                 Revenue = grouped.Select(g => g.order.TotalAmount).Distinct().Sum(), // Chỉ tính TotalAmount một lần cho mỗi đơn hàng
-                                 TotalOrders = grouped.Select(g => g.order.OrderCode).Distinct().Count(), // Đếm số đơn hàng duy nhất
-                                 TotalBooks = grouped.Sum(g => g.detail != null ? g.detail.Quantity : 0) // Tổng số sách trong các chi tiết đơn hàng
-                             }).ToList();
+            const int pageSize = 10; // Số lượng khách hàng mỗi trang
+
+            if (pg < 1)
+            {
+                pg = 1;
+            }
+
+            // Lấy danh sách khách hàng và tính toán các chỉ số
+            var customersQuery = (from order in _dataContext.Orders
+                                  where order.Status != 3 // Loại trừ các đơn hàng có trạng thái là 3 (đã hủy)
+                                  join user in _dataContext.Users on order.Username equals user.Email // Join với bảng Users
+                                  join orderDetail in _dataContext.OrderDetails on order.OrderCode equals orderDetail.OrderCode into orderDetails
+                                  from detail in orderDetails.DefaultIfEmpty()
+                                  group new { order, detail, user } by order.Username into grouped
+                                  select new
+                                  {
+                                      Username = grouped.Key,
+                                      UserName = grouped.FirstOrDefault().user.UserName, // Lấy tên người dùng đầu tiên trong nhóm
+                                      PhoneNumber = grouped.FirstOrDefault().user.PhoneNumber, // Lấy số điện thoại người dùng đầu tiên trong nhóm
+                                      Revenue = grouped.Select(g => g.order.TotalAmount).Distinct().Sum(), // Chỉ tính TotalAmount một lần cho mỗi đơn hàng
+                                      TotalOrders = grouped.Select(g => g.order.OrderCode).Distinct().Count(), // Đếm số đơn hàng duy nhất
+                                      TotalBooks = grouped.Sum(g => g.detail != null ? g.detail.Quantity : 0) // Tổng số sách trong các chi tiết đơn hàng
+                                  });
+
+            // Tổng số khách hàng
+            int recsCount = customersQuery.Count();
+
+            // Tính toán phân trang
+            var pager = new Paginate(recsCount, pg, pageSize);
+            int recSkip = (pg - 1) * pageSize;
+
+            // Lấy dữ liệu phân trang
+            var customers = customersQuery
+                .Skip(recSkip)
+                .Take(pager.PageSize)
+                .ToList();
+
+            // Gửi thông tin phân trang vào ViewBag
+            ViewBag.Pager = pager;
 
             return View(customers);
         }
+
 
 
 

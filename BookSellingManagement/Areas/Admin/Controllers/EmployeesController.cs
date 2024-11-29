@@ -24,8 +24,16 @@ namespace BookSellingManagement.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pg = 1)
         {
+            const int pageSize = 10; // Số lượng nhân viên mỗi trang
+
+            if (pg < 1)
+            {
+                pg = 1;
+            }
+
+            // Lấy danh sách nhân viên
             var employees = await (
                 from u in _userManager.Users
                 join ur in _dataContext.UserRoles on u.Id equals ur.UserId
@@ -34,8 +42,21 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                 select u // Chỉ chọn đối tượng AppUserModel
             ).ToListAsync();
 
-            return View(employees);
+            int recsCount = employees.Count; // Tổng số nhân viên
+
+            // Tạo đối tượng phân trang
+            var pager = new Paginate(recsCount, pg, pageSize);
+
+            int recSkip = (pg - 1) * pageSize;
+
+            // Áp dụng phân trang
+            var data = employees.Skip(recSkip).Take(pager.PageSize).ToList();
+
+            ViewBag.Pager = pager;
+
+            return View(data);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Create()

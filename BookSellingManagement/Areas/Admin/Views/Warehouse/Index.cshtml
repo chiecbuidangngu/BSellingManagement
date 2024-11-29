@@ -125,13 +125,4 @@
  
 }
 <partial name="_Paging" model="@pager" />
-<script>
-    function searchBook() {
-        const input = document.getElementById('searchInput').value.toLowerCase();
-        const tableRows = document.querySelectorAll('#bookTable tr');
-        tableRows.forEach(row => {
-            const bookName = row.cells[1].innerText.toLowerCase();
-            row.style.display = bookName.includes(input) ? '' : 'none';
-        });
-    }
-</script>
+

@@ -1405,3 +1405,4 @@ C:\Users\Huyen\Downloads\BookSellingManagement - 2711\BookSellingManagement\obj\
 C:\Users\Huyen\Downloads\BookSellingManagement - 2711\BookSellingManagement\obj\Debug\net6.0\BookSellingManagement.pdb
 C:\Users\Huyen\Downloads\BookSellingManagement - 2711\BookSellingManagement\obj\Debug\net6.0\BookSellingManagement.genruntimeconfig.cache
 C:\Users\Huyen\Downloads\BookSellingManagement - 2711\BookSellingManagement\obj\Debug\net6.0\ref\BookSellingManagement.dll
+C:\Users\Huyen\Downloads\BookSellingManagement - 2711\BookSellingManagement\obj\Debug\net6.0\BookSellingManagement.sourcelink.json

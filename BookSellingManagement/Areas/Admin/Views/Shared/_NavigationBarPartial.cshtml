@@ -1,6 +1,6 @@
 ﻿<!-- User Menu -->
 <div class="user-menu" id="userMenu">
-    <img src="~/images/avt.jpg" alt="Avatar" class="avatar" id="userAvatar">
+  
     <button class="btn" id="sidebarToggle"><i class="fas fa-bars"></i></button>
     <button class="btn position-relative" id="notificationToggle">
         <i class="fas fa-bell"></i>
@@ -10,11 +10,13 @@
 <div class="sidebar" id="sidebar">
     <ul class="list-group">
         <li class="list-group-item">
-            <a asp-area="Admin" asp-controller="AccountProfile" asp-action="Index">Thông tin cá nhân</a>
+            <a asp-area="Admin" asp-controller="Account" asp-action="UpdateAccount">Thông tin cá nhân</a>
         </li>
      
         <li class="list-group-item"><a asp-area="Admin" asp-action="Index" asp-controller="ChangePassword">Đổi mật khẩu</a></li>
-        <li class="list-group-item"><a href="#">Đăng xuất</a></li>
+        <li class="list-group-item">
+            <a href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+        </li>
     </ul>
 </div>
 

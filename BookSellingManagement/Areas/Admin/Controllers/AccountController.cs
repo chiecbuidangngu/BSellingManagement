@@ -1,80 +1,30 @@
-﻿using BookSellingManagement.Models;
-using BookSellingManagement.Models.ViewModels;
+﻿using BookSellingManagement.Models.ViewModels;
+using BookSellingManagement.Models;
 using BookSellingManagement.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using BookSellingManagement.Models.OrderModel;
+using Microsoft.EntityFrameworkCore;
 
-namespace BookSellingManagement.Controllers
+namespace BookSellingManagement.Areas.Admin.Controllers
 {
-
+    [Area("Admin")]
+    [Authorize(Roles = "Quản trị viên, Nhân viên")]
     public class AccountController : Controller
     {
         private UserManager<AppUserModel> _userManager;
         private SignInManager<AppUserModel> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+
         private readonly DataContext _dataContext;
-        public AccountController(SignInManager<AppUserModel> signInManager, UserManager<AppUserModel> userManager, RoleManager<IdentityRole> roleManager, DataContext context)
+        public AccountController(SignInManager<AppUserModel> signInManager, UserManager<AppUserModel> userManager, DataContext context)
         {
             _signInManager = signInManager;
             _userManager = userManager;
-            _roleManager = roleManager;
             _dataContext = context;
-         
+
         }
 
-        [HttpGet] 
-        public IActionResult Login(string returnUrl)
-        {
-            return View(new LoginViewModel { ReturnUrl = returnUrl }); // Trả về View form đăng nhập
-        }
-    
-       [HttpPost]
-       public async Task<IActionResult> Login(LoginViewModel loginVM)
-       {
-           if (ModelState.IsValid)
-           {
-               // Kiểm tra thông tin đăng nhập
-               var result = await _signInManager.PasswordSignInAsync(loginVM.Username, loginVM.Password, false, false);
-
-               if (result.Succeeded)
-               {
-                   // Lấy thông tin người dùng
-                   var user = await _userManager.FindByNameAsync(loginVM.Username);
-
-                   if (user != null)
-                   {
-                       // Kiểm tra vai trò của người dùng
-                       var roles = await _userManager.GetRolesAsync(user);
-
-                       // Điều hướng dựa trên vai trò
-                       if (roles.Contains("Quản trị viên && Nhân viên"))
-                       {
-                         
-                            return RedirectToAction("Index", "Home", new { area = "admin" });
-                        }
-
-                        else
-                       {
-
-                            return RedirectToAction("Index", "Books");
-                        }
-                   }
-               }
-               ModelState.AddModelError("", "Tên người dùng hoặc mật khẩu không chính xác");
-           }
-
-           return View(loginVM); // Trả lại View nếu thông tin không hợp lệ
-       }
-        public IActionResult Register()
-        {
-            
-            return View();
-        }
-     
         public async Task<IActionResult> UpdateAccount()
         {
             if (!(User.Identity?.IsAuthenticated ?? false))
@@ -150,50 +100,21 @@ namespace BookSellingManagement.Controllers
             return View(user); // Trả lại view nếu có lỗi
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Register(UserModel user)
-        {
-            if (ModelState.IsValid)
-            {
-                var newUser = new AppUserModel
-                {
-                    UserName = user.Username,
-                    Email = user.Email,
-                    PhoneNumber = user.PhoneNumber,
-                    FullName = user.FullName,
-                    Address = user.Address
-                };
-
-                var result = await _userManager.CreateAsync(newUser, user.Password);
-                if (result.Succeeded)
-                {
-                    // Gán vai trò mặc định cho người dùng
-                    string defaultRole = "Người dùng";
-                    await _userManager.AddToRoleAsync(newUser, defaultRole);
-
-                    return RedirectToAction("Login");
-                }
-
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
-            }
-
-            return View(user);
-        }
-
         [HttpGet]
         public IActionResult ChangePassword()
         {
-                return View();
+            return View();
         }
+
         public async Task<IActionResult> Logout(string returnUrl = "/")
         {
             await _signInManager.SignOutAsync();
             return Redirect(returnUrl);
         }
        
+        
+
+
 
     }
 }
