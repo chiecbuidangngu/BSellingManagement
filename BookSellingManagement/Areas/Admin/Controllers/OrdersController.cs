@@ -86,6 +86,43 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             return RedirectToAction("Index", "Orders");
         }
-        
+        public async Task<IActionResult> OrderDetail(string orderId)
+        {
+            // Tìm đơn hàng theo OrderId
+            var order = await _dataContext.Orders
+                                           .FirstOrDefaultAsync(o => o.OrderId == orderId);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            // Lấy OrderCode của đơn hàng vừa tìm được
+            var orderCode = order.OrderCode;
+
+            // Lấy chi tiết đơn hàng từ OrderDetails bằng OrderCode
+            var orderDetails = await _dataContext.OrderDetails
+                                                  .Where(od => od.OrderCode == orderCode)
+                                                  .ToListAsync();
+
+            // Lấy thông tin sách từ bảng Books dựa trên BookId trong OrderDetails
+            var books = await _dataContext.Books
+                                           .Where(b => orderDetails.Select(od => od.BookId).Contains(b.BookId))
+                                           .ToListAsync();
+
+            // Kết nối thông tin chi tiết đơn hàng với thông tin sách, bao gồm cả Image
+            var orderItems = orderDetails.Select(od => new
+            {
+                Book = books.FirstOrDefault(b => b.BookId == od.BookId),
+                od.Quantity,
+                od.Price
+            }).ToList();
+
+            // Truyền danh sách orderItems vào ViewBag
+            ViewBag.OrderItems = orderItems;
+
+            // Trả về view với thông tin đơn hàng
+            return View(order);
+        }
     }
 }

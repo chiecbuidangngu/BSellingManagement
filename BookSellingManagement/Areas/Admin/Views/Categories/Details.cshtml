@@ -32,8 +32,10 @@
             </div>
         </div>
 
-        <div class="text-left mt-4">
-            <a class="btn btn-primary" asp-action="Index" asp-controller="Categories">Quay Lại</a>
+        <div class="mt-4">
+            <a href="@Url.Action("Index", "Categories")">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
         </div>
     </form>
 </div>

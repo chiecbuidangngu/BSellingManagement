@@ -93,15 +93,5 @@
     </div>
 <partial name="_Paging" model="@pager" />
 
-    <script>
-        // Function to search customers by name
-        function searchCustomer() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const tableRows = document.querySelectorAll('#customerTable tr');
-            tableRows.forEach(row => {
-                const customerName = row.cells[1].innerText.toLowerCase();
-                row.style.display = customerName.includes(input) ? '' : 'none';
-            });
-        }
-    </script>
+
 

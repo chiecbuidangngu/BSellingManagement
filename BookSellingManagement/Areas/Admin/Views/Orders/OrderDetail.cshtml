@@ -1,4 +1,16 @@
 ﻿@model dynamic // Adjust the model type based on your actual model structure
+<style>
+    .order-detail-container {
+        margin-left: 170px !important;
+    }
+
+
+
+  
+</style>
+
+
+
 
 <div class="order-detail-container">
     <div class="detail-header">
@@ -8,35 +20,36 @@
     <div class="row">
         <div class="col-sm-4">
             <div class="d-flex justify-content-between flex-wrap">
-                <p>Đơn hàng: @Model.OrderCode</p>
+                <p class="bold-text">Đơn hàng: @Model.OrderCode</p>
             </div>
             <div class="d-flex justify-content-between flex-wrap">
-                <p>Ngày tạo: @Model.CreateDate.ToString("dd/MM/yyyy HH:mm:ss")</p>
+                <p class="bold-text">Ngày tạo: @Model.CreateDate.ToString("dd/MM/yyyy HH:mm:ss")</p>
             </div>
             <div class="d-flex justify-content-between">
-                <p class="flex-shrink-0 pr-1">Địa chỉ: @Model.Address</p>
+                <p class="bold-text flex-shrink-0 pr-1">Địa chỉ: @Model.Address</p>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="d-flex justify-content-between flex-wrap">
-                <p>Người nhận: @Model.FullName</p>
+                <p class="bold-text">Người nhận: @Model.FullName</p>
             </div>
             <div class="d-flex justify-content-between flex-wrap">
-                <p>Điện thoại: @Model.PhoneNumber</p>
+                <p class="bold-text">Điện thoại: @Model.PhoneNumber</p>
             </div>
            
         </div>
         <div class="col-sm-4">
             <div class="d-flex justify-content-between flex-wrap">
-                <p>PT thanh toán: @Model.PaymentMethod</p>
+                <p class="bold-text">PT thanh toán: @Model.PaymentMethod</p>
             </div>
             <div class="d-flex justify-content-between flex-wrap">
-                <p>Tổng tiền: @Model.TotalAmount.ToString("N0", new System.Globalization.CultureInfo("vi-VN"))</p>
+                <p class="bold-text">Tổng tiền: @Model.TotalAmount.ToString("N0", new System.Globalization.CultureInfo("vi-VN"))</p>
             </div>
         </div>
     </div>
+    <div class="table-container">
+        <table class="table table-bordered table-striped mt-3" style="width: 90%;">
 
-    <table class="table-bordered w-100 mt-3">
         <thead>
             <tr>
   
@@ -64,7 +77,11 @@
             }
         </tbody>
     </table>
-
-
+    </div>
+    <div class="mt-4">
+        <a href="@Url.Action("Index", "Orders")">
+            <i class="fas fa-arrow-left"></i> Quay lại
+        </a>
+    </div>
 
 </div>

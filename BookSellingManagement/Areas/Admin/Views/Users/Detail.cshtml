@@ -38,9 +38,10 @@
             <input class="form-control" disabled value="@Model.Address" />
         </div>
     </div>
-
-    <div class="text-left mt-4">
-        <a class="btn btn-primary" asp-action="Index" asp-controller="Users">Quay Lại</a>
-    </div>
+        <div class="mt-4">
+            <a href="@Url.Action("Index", "Users")">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+        </div>
 </div>
 </form>

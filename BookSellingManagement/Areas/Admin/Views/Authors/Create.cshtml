@@ -43,8 +43,10 @@
 
             <button type="submit" class="btn btn-primary">Thêm mới</button>
         </div>
-        <div class="text-left mt-4">
-            <a class="btn btn-primary" asp-action="Index" asp-controller="Authors">Quay Lại</a>
+        <div class="mt-4">
+            <a href="@Url.Action("Index", "Authors")">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
         </div>
     </form>
 </div>

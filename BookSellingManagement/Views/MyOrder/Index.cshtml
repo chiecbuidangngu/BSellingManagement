@@ -57,7 +57,8 @@
                             <th>Địa chỉ</th>
                             <th>Ngày đặt</th>
                             <th>Tổng tiền</th>
-                            <th>Thao tác</th>
+                                <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody id="bookTable">
@@ -114,9 +115,14 @@
                                                 <i class="bi bi-check text-success" style="font-size: 1.5rem; cursor: pointer;"></i>
                                             </a>
                                         }
-
+                                       
                                     </td>
-
+                                    <td>
+                                        <a href="@Url.Action("Download", "MyOrder", new { orderId = item.OrderId })" title="Tải về">
+                                            <i class="bi bi-download" style="font-size: 1rem; cursor: pointer;"></i>
+                                        </a>
+                                    </td>
+                                   
                             </tr>
                         }
                     </tbody>
@@ -130,19 +136,4 @@
  
 </div>
 <partial name="_PagingUs" model="@pager" />
-<script>
-    function searchOrders() {
-        var searchTerm = document.getElementById('searchInput').value.toLowerCase();
-        var rows = document.querySelectorAll("#bookTable tr");
 
-        rows.forEach(function (row) {
-            var orderCode = row.querySelector("td a").textContent.toLowerCase();
-            if (orderCode.includes(searchTerm)) {
-                row.style.display = "";
-            } else {
-                row.style.display = "none";
-            }
-        });
-    }
-    document.getElementById('searchInput').addEventListener('input', searchOrders);
-</script>

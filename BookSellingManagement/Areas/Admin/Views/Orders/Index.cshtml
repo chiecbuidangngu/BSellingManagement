@@ -74,7 +74,7 @@
                     {
                         <tr>
                             <td>
-                                <a href="@Url.Action("DetailOrder", "Orders", new { orderId = item.OrderId })" class="text-primary">
+                                <a href="@Url.Action("OrderDetail", "Orders", new { orderId = item.OrderId })" class="text-primary">
                                     @item.OrderCode
                                 </a>
                             </td>
@@ -135,16 +135,5 @@
     <partial name="_Paging" model="@pager" />
 
 
-    <script>
-        function searchBook() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const tableRows = document.querySelectorAll('#bookTable tr');
-            tableRows.forEach(row => {
-                const bookName = row.cells[1].innerText.toLowerCase();
-                row.style.display = bookName.includes(input) ? '' : 'none';
-            });
-        }
-    </script>
-    
 </body>
 
