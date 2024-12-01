@@ -17,7 +17,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             _dataContext = context;
         }
 
-        public IActionResult Index(int pg = 1)
+        public IActionResult Index(int pg = 1, string search = "")
         {
             const int pageSize = 10; // Số lượng khách hàng mỗi trang
 
@@ -43,7 +43,17 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                                       TotalBooks = grouped.Sum(g => g.detail != null ? g.detail.Quantity : 0) // Tổng số sách trong các chi tiết đơn hàng
                                   });
 
-            // Tổng số khách hàng
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                customersQuery = customersQuery.Where(c =>
+                    c.UserName.Contains(search) ||
+                    c.PhoneNumber.Contains(search));
+
+                ViewBag.Search = search; // Lưu từ khóa tìm kiếm để hiển thị lại trên giao diện
+            }
+
+            // Tổng số khách hàng sau khi lọc
             int recsCount = customersQuery.Count();
 
             // Tính toán phân trang
@@ -52,6 +62,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             // Lấy dữ liệu phân trang
             var customers = customersQuery
+                .OrderBy(c => c.Username) // Sắp xếp theo `Username` hoặc cột khác nếu cần
                 .Skip(recSkip)
                 .Take(pager.PageSize)
                 .ToList();
@@ -61,6 +72,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             return View(customers);
         }
+
 
 
 

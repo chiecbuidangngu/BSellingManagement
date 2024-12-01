@@ -16,7 +16,9 @@ namespace BookSellingManagement.Areas.Admin.Controllers
         {
             _dataContext = context;
         }
-        public async Task<IActionResult> Index(int pg = 1)
+
+
+        public async Task<IActionResult> Index(int pg = 1, string search = "")
         {
             const int pageSize = 10; // Số lượng sách mỗi trang
 
@@ -25,8 +27,17 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                 pg = 1;
             }
 
-            // Lấy tất cả sách từ cơ sở dữ liệu và sắp xếp theo BookId
-            var books = await _dataContext.Books.OrderBy(b => b.BookId).ToListAsync();
+            // Lấy danh sách sách từ cơ sở dữ liệu và sắp xếp theo BookId
+            var booksQuery = _dataContext.Books.AsQueryable();
+
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                booksQuery = booksQuery.Where(b => b.BookName.Contains(search)); // Tìm kiếm theo tên sách hoặc tên tác giả
+                ViewBag.Search = search; // Để hiển thị lại từ khóa trên giao diện
+            }
+
+            var books = await booksQuery.OrderBy(b => b.BookId).ToListAsync();
 
             // Duyệt qua tất cả các sách và tính số lượng đã bán cho mỗi sách
             foreach (var book in books)
@@ -39,11 +50,12 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                                                                               .Any(o => o.OrderCode == od.OrderCode && o.Status != 3))
                                                      .SumAsync(od => od.Quantity);
 
-                // Cập nhật giá trị số lượng đã bán vào cơ sở dữ liệu
+                // Cập nhật giá trị số lượng đã bán vào đối tượng sách
                 book.SoldQuantity = soldQuantity;
             }
 
-            await _dataContext.SaveChangesAsync();
+           
+             await _dataContext.SaveChangesAsync();
 
             // Sắp xếp sách theo RemainingQuantity
             var sortedBooks = books.OrderBy(b => b.RemainingQuantity).ToList();
@@ -59,6 +71,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             return View(pagedBooks);
         }
+
 
 
         [HttpPost]

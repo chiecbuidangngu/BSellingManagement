@@ -7,36 +7,116 @@
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\customers\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\customers\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\customers\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\customers\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\orders\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\orders\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\warehouse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\warehouse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\warehouse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\warehouse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\shared\\_navigationbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\shared\\_navigationbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\books\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\books\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\shared\\_paging.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\shared\\_paging.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\orders\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\orders\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -111,20 +191,12 @@
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\authors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\account\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\account\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\myorder\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -163,16 +235,8 @@
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\shared\\_navigationbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\models\\authormodel\\authormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -187,20 +251,8 @@
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\shared\\_navigationbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\shared\\_navigationbarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\books\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\books\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\shared\\components\\categories\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -219,32 +271,12 @@
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\account\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -255,40 +287,12 @@
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\statisticalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\shared\\_paging.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\shared\\_paging.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\views\\shared\\_supportpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\views\\shared\\_supportpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\views\\shared\\_sidebarpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -305,10 +309,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\models\\accountmodel\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\models\\accountmodel\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\areas\\admin\\controllers\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|solutionrelative:booksellingmanagement\\areas\\admin\\controllers\\changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF10E151-90C4-43B2-8CC2-EA17EF63D8B6}|BookSellingManagement\\BookSellingManagement.csproj|c:\\users\\huyen\\downloads\\booksellingmanagement - 2711\\booksellingmanagement\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -632,8 +632,99 @@
       "DocumentGroups": [
         {
           "DockedHeight": 32,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WarehouseController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:36:03.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T17:30:28.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T18:46:20.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:35:36.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:50:16.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwDkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T14:24:22.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml*",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T17:14:48.847Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -642,58 +733,19 @@
               "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\CustomersController.cs",
               "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\CustomersController.cs*",
               "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\CustomersController.cs*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAF8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T21:27:17.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T19:08:18.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T13:35:19.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T18:07:17.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Orders.cshtml",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Orders.cshtml",
               "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Orders.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Orders.cshtml*",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Orders.cshtml*",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Orders.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Orders.cshtml",
               "ViewState": "AgIAAEkAAAAAAAAAAAAAwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-28T08:26:57.994Z",
@@ -701,7 +753,238 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml*",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T14:23:44.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwC0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T19:53:54.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:35:30.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Warehouse\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T13:35:19.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T02:58:17.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T17:01:47.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T15:39:36.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:35:06.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_NavigationBarPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T20:30:33.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthorsController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T16:41:25.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T17:15:30.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChangePassword.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:35:18.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwDMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T17:53:25.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Search.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Books\\Search.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Search.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Books\\Search.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T09:46:28.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T17:15:02.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Paging.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T14:37:16.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwD4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T15:42:33.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T16:50:46.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Edit.cshtml",
               "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Edit.cshtml",
@@ -709,753 +992,11 @@
               "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Edit.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T18:07:32.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Index.cshtml",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T14:23:44.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAwEsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T17:01:47.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwG4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:35:36.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T17:30:28.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Index.cshtml",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAwEEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T19:53:54.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T15:33:49.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAswEgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T15:06:00.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderDetail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-30T20:39:07.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T20:05:08.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T20:47:20.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T18:11:26.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Books.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwDwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T08:28:54.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswCwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T22:16:56.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T03:13:39.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T22:17:23.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFUAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T22:17:39.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAswFcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T22:18:01.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFMAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T16:17:34.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T22:18:11.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAswC0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T03:13:55.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T22:18:24.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T18:07:32.642Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Index.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T17:15:02.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UpdateAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T15:37:15.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwDsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:34:43.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T02:58:17.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Reponsitory\\SeedData.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Reponsitory\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Reponsitory\\SeedData.cs",
-              "RelativeToolTip": "BookSellingManagement\\Reponsitory\\SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:33:46.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "OrderDetailModel.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
-              "RelativeToolTip": "BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:20:08.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "MyOrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\MyOrderController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\MyOrderController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\MyOrderController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Controllers\\MyOrderController.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAAAIUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:43:53.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T03:32:08.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "OrderDetail.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T12:36:12.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "OrderModel.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
-              "RelativeToolTip": "BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA/wBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T08:20:59.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "BookModel.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\BookModel\\BookModel.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\BookModel\\BookModel.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\BookModel\\BookModel.cs",
-              "RelativeToolTip": "BookSellingManagement\\Models\\BookModel\\BookModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:11:39.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T13:08:25.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "_NavigationBarPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T16:06:22.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AppUserModel.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AppUserModel.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\AppUserModel.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AppUserModel.cs",
-              "RelativeToolTip": "BookSellingManagement\\Models\\AppUserModel.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:59:42.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T15:42:33.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AuthorModel.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
-              "RelativeToolTip": "BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T16:11:21.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T17:53:25.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T16:37:26.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "_NavigationBarPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\_NavigationBarPartial.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T20:30:33.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T08:40:48.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T06:35:37.582Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CartController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Controllers\\CartController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwG8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T17:00:00.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Search.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Search.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Books\\Search.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Search.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Books\\Search.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T09:46:28.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAACsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T18:48:59.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Books\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Books\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T17:15:30.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "_BannerCarouselPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T18:22:59.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T17:44:58.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAuwC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T15:39:36.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:15:17.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:35:30.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T16:50:46.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "AuthorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\AuthorsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T16:41:25.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T16:44:17.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:35:06.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Checkout\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Checkout\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Checkout\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Checkout\\Index.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T06:34:41.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "UpdateAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T15:57:20.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "StatisticalController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwEUAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:35:50.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T14:24:22.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\HomeController.cs",
@@ -1467,43 +1008,523 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "WarehouseController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\WarehouseController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwD0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 36,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T18:07:17.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T19:08:18.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Detail.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:33:49.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAswEgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:06:00.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Orders\\OrderDetail.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-30T20:39:07.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T20:05:08.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Roles\\Edit.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T20:47:20.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Employees\\Detail.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T18:11:26.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Books.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Customers\\Books.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwDwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T08:28:54.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAswCwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:16:56.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Details.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T03:13:39.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:17:23.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Create.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:17:39.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Edit.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAswFcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:18:01.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Books\\Details.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T16:17:34.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Create.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:18:11.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Details.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswC0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T03:13:55.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Authors\\Edit.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:18:24.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UpdateAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Account\\UpdateAccount.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:37:15.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:36:03.938Z"
+              "WhenOpened": "2024-11-23T16:34:43.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Reponsitory\\SeedData.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Reponsitory\\SeedData.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Reponsitory\\SeedData.cs",
+              "RelativeToolTip": "BookSellingManagement\\Reponsitory\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:33:46.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "OrderDetailModel.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
+              "RelativeToolTip": "BookSellingManagement\\Models\\OrderModel\\OrderDetailModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:20:08.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "MyOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\MyOrderController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\MyOrderController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\MyOrderController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Controllers\\MyOrderController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAIUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T07:43:53.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\MyOrder\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T03:32:08.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "OrderDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\MyOrder\\OrderDetail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T12:36:12.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
+              "RelativeToolTip": "BookSellingManagement\\Models\\OrderModel\\OrderModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA/wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T08:20:59.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BookModel.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\BookModel\\BookModel.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\BookModel\\BookModel.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\BookModel\\BookModel.cs",
+              "RelativeToolTip": "BookSellingManagement\\Models\\BookModel\\BookModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:11:39.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T13:08:25.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "_NavigationBarPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_NavigationBarPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T16:06:22.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AppUserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AppUserModel.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\AppUserModel.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AppUserModel.cs",
+              "RelativeToolTip": "BookSellingManagement\\Models\\AppUserModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T19:59:42.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AuthorModel.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
+              "RelativeToolTip": "BookSellingManagement\\Models\\AuthorModel\\AuthorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T16:11:21.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T16:37:26.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\Components\\Categories\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T08:40:48.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T06:35:37.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CartController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Controllers\\CartController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwG8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T17:00:00.174Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 66,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAA/wCkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:50:16.516Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAACsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T18:48:59.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "_BannerCarouselPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Shared\\_BannerCarouselPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T18:22:59.142Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 68,
-              "Title": "_Paging.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_Paging.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABlAAAAAAAAAA==",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T14:37:16.817Z"
+              "WhenOpened": "2024-11-02T17:44:58.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:15:17.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T16:44:17.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Checkout\\Index.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Checkout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Checkout\\Index.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Checkout\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T06:34:41.247Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 69,
+              "Title": "UpdateAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
+              "RelativeToolTip": "BookSellingManagement\\Views\\Account\\UpdateAccount.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T15:57:20.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "StatisticalController.cs",
+              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\StatisticalController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwEUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:35:50.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
               "Title": "_SupportPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Views\\Shared\\_SupportPartial.cshtml",
               "RelativeDocumentMoniker": "BookSellingManagement\\Views\\Shared\\_SupportPartial.cshtml",
@@ -1515,31 +1536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T18:46:20.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T17:14:48.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "BookSellingManagement.csproj",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\BookSellingManagement.csproj",
               "RelativeDocumentMoniker": "BookSellingManagement\\BookSellingManagement.csproj",
@@ -1551,7 +1548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "Paginate.cs",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\Paginate.cs",
               "RelativeDocumentMoniker": "BookSellingManagement\\Models\\Paginate.cs",
@@ -1563,7 +1560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "_SideBarPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_SideBarPartial.cshtml",
               "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Views\\Shared\\_SideBarPartial.cshtml",
@@ -1575,7 +1572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Models\\AccountModel\\UserModel.cs",
               "RelativeDocumentMoniker": "BookSellingManagement\\Models\\AccountModel\\UserModel.cs",
@@ -1584,18 +1581,6 @@
               "ViewState": "AgIAAA0AAAAAAAAAAIA+wB8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T16:42:47.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "ChangePassword.cs",
-              "DocumentMoniker": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
-              "RelativeDocumentMoniker": "BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
-              "ToolTip": "C:\\Users\\Huyen\\Downloads\\BookSellingManagement - 2711\\BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
-              "RelativeToolTip": "BookSellingManagement\\Areas\\Admin\\Controllers\\ChangePassword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:35:18.388Z"
             },
             {
               "$type": "Document",

@@ -24,7 +24,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index(int pg = 1)
+        public async Task<IActionResult> Index(int pg = 1, string search = "")
         {
             const int pageSize = 10; // Số lượng nhân viên mỗi trang
 
@@ -34,28 +34,41 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             }
 
             // Lấy danh sách nhân viên
-            var employees = await (
-                from u in _userManager.Users
-                join ur in _dataContext.UserRoles on u.Id equals ur.UserId
-                join r in _dataContext.Roles on ur.RoleId equals r.Id
-                where r.Name == "Nhân viên"
-                select u // Chỉ chọn đối tượng AppUserModel
-            ).ToListAsync();
+            var employeesQuery = from u in _userManager.Users
+                                 join ur in _dataContext.UserRoles on u.Id equals ur.UserId
+                                 join r in _dataContext.Roles on ur.RoleId equals r.Id
+                                 where r.Name == "Nhân viên"
+                                 select u; // Chỉ chọn đối tượng AppUserModel
 
-            int recsCount = employees.Count; // Tổng số nhân viên
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                employeesQuery = employeesQuery.Where(u =>
+                    u.UserName.Contains(search) ||
+                    u.Email.Contains(search) ||
+                    u.PhoneNumber.Contains(search));
+
+                ViewBag.Search = search; // Lưu từ khóa tìm kiếm để hiển thị lại trên giao diện
+            }
+
+            int recsCount = await employeesQuery.CountAsync(); // Tổng số nhân viên sau khi lọc
 
             // Tạo đối tượng phân trang
             var pager = new Paginate(recsCount, pg, pageSize);
-
             int recSkip = (pg - 1) * pageSize;
 
             // Áp dụng phân trang
-            var data = employees.Skip(recSkip).Take(pager.PageSize).ToList();
+            var data = await employeesQuery
+                .OrderBy(u => u.UserName) // Sắp xếp theo UserName hoặc tiêu chí khác nếu cần
+                .Skip(recSkip)
+                .Take(pageSize)
+                .ToListAsync();
 
             ViewBag.Pager = pager;
 
             return View(data);
         }
+
 
 
         [HttpGet]

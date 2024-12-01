@@ -32,34 +32,29 @@ namespace BookSellingManagement.Controllers
 
             // Chuyển đổi thành danh sách và tính tổng số bản ghi
             List<BookModel> books = await booksQuery.ToListAsync(); // Hoặc sử dụng ToList() nếu không cần await
-
             const int pageSize = 10;  // Số lượng sách hiển thị trên một trang
             int recsCount = books.Count();  // Tổng số sách
-
             // Tính toán phân trang
             var pager = new Paginate(recsCount, pg, pageSize);
-
             // Tính số lượng bản ghi cần bỏ qua
             int recSkip = (pg - 1) * pageSize;
-
             // Lấy dữ liệu cho trang hiện tại
             var data = books.Skip(recSkip).Take(pager.PageSize).ToList();
-
             // Truyền dữ liệu phân trang vào ViewBag
             ViewBag.Pager = pager;
-
             return View(data); // Trả về dữ liệu phân trang vào View
         }
 
+        public async Task<IActionResult> Search(string search)
+        {
+            var books = await _dataContext.Books.Where(b => b.BookName.Contains(search) || b.Description.Contains(search)).ToListAsync();
+            ViewBag.Keyword = search;
+            return View(books);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 
-        public async Task<IActionResult> Search(string searchTerm)
-        {
-            var books = await _dataContext.Books.Where(b => b.BookName.Contains(searchTerm) || b.Description.Contains(searchTerm)).ToListAsync();
-            ViewBag.Keyword = searchTerm;
-            return View(books);
-        }
+    
         public async Task<IActionResult> Details(string BookId = "")
         {
             // Kiểm tra nếu BookId rỗng hoặc null

@@ -24,11 +24,23 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             _userManager = userManager;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search = "")
         {
+            // Lấy danh sách Roles từ cơ sở dữ liệu và sắp xếp theo Id
+            var rolesQuery = _dataContext.Roles.AsQueryable();
 
-            return View(await _dataContext.Roles.OrderBy(c => c.Id).ToListAsync());
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                rolesQuery = rolesQuery.Where(r => r.Name.Contains(search)); // Tìm kiếm theo tên Role
+                ViewBag.Search = search; // Để hiển thị lại từ khóa trên giao diện
+            }
+
+            var roles = await rolesQuery.OrderBy(r => r.Id).ToListAsync();
+
+            return View(roles);
         }
+
         [HttpGet]
         public IActionResult Create()
         {

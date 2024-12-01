@@ -24,28 +24,34 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
         }
         [HttpGet]
-        public async Task<IActionResult> Index(int pg = 1)
+        public async Task<IActionResult> Index(int pg = 1, string search = "")
         {
-            const int pageSize = 10; // Số lượng bản ghi mỗi trang
+            const int pageSize = 10; 
 
             if (pg < 1)
             {
                 pg = 1;
             }
-
+            
             var usersWithRolesQuery =
                 from u in _dataContext.Users
                 join ur in _dataContext.UserRoles on u.Id equals ur.UserId
                 join r in _dataContext.Roles on ur.RoleId equals r.Id
                 select new
                 {
-                    User = u,          // Giữ đối tượng người dùng
-                    RoleName = r.Name  // Lấy tên vai trò
+                    User = u,          
+                    RoleName = r.Name  
                 };
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                usersWithRolesQuery = usersWithRolesQuery.Where(ur => ur.User.UserName.Contains(search) || ur.RoleName.Contains(search));
+                ViewBag.Search = search; 
+            }
 
             var usersWithRoles = await usersWithRolesQuery.ToListAsync();
 
-            int recsCount = usersWithRoles.Count(); // Tổng số bản ghi
+            int recsCount = usersWithRoles.Count(); 
 
             var pager = new Paginate(recsCount, pg, pageSize);
 
@@ -57,10 +63,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             return View(data);
         }
-
-
-
-
 
         [HttpGet]
         public async Task<IActionResult> Create()

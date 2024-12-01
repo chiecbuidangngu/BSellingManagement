@@ -19,7 +19,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
         }
 
 
-        public async Task<IActionResult> Index(int pg = 1)
+        public async Task<IActionResult> Index(int pg = 1, string search = "")
         {
             const int pageSize = 10; // Số lượng đơn hàng mỗi trang
 
@@ -28,17 +28,30 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                 pg = 1;
             }
 
-            List<OrderModel> orders = await _dataContext.Orders
+            // Lấy danh sách đơn hàng
+            var ordersQuery = _dataContext.Orders
                 .OrderByDescending(c => c.CreateDate) // Sắp xếp theo ngày tạo mới nhất
-                .ToListAsync();
+                .AsQueryable();
 
-            int recsCount = orders.Count(); // Tổng số đơn hàng
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                ordersQuery = ordersQuery.Where(o =>
+                    o.OrderCode.Contains(search)); // Tìm theo mã đơn hàng
+                ViewBag.Search = search; // Để hiển thị lại từ khóa trên giao diện
+            }
+
+            // Tổng số đơn hàng sau khi áp dụng tìm kiếm
+            int recsCount = await ordersQuery.CountAsync();
 
             var pager = new Paginate(recsCount, pg, pageSize);
-
             int recSkip = (pg - 1) * pageSize;
 
-            var data = orders.Skip(recSkip).Take(pager.PageSize).ToList();
+            // Áp dụng phân trang
+            var data = await ordersQuery
+                .Skip(recSkip)
+                .Take(pageSize)
+                .ToListAsync();
 
             ViewBag.Pager = pager;
 

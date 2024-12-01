@@ -20,30 +20,43 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             _dataContext = context;
 
         }
-        public async Task<IActionResult> Index(int pg = 1)
+        public async Task<IActionResult> Index(int pg = 1, string search = "")
         {
-            
-                List<CategoryModel> category = _dataContext.Categories.ToList(); 
+            const int pageSize = 10;
 
-                const int pageSize = 10;
+            if (pg < 1)
+            {
+                pg = 1;
+            }
 
-                if (pg < 1)
-                {
-                    pg = 1; 
-                }
-                int recsCount = category.Count(); 
+            // Lấy danh sách danh mục từ cơ sở dữ liệu
+            var categories = _dataContext.Categories.AsQueryable();
 
-                var pager = new Paginate(recsCount, pg, pageSize);
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                categories = categories.Where(c => c.CategoryName.Contains(search));
+                ViewBag.Search = search; // Lưu từ khóa tìm kiếm để hiển thị lại trên giao diện
+            }
 
-                int recSkip = (pg - 1) * pageSize; 
+            // Tính tổng số bản ghi sau khi lọc
+            int recsCount = await categories.CountAsync();
+            int recSkip = (pg - 1) * pageSize;
 
-                var data = category.Skip(recSkip).Take(pager.PageSize).ToList();
+            // Phân trang
+            var data = await categories
+                .OrderBy(c => c.CategoryId) // Sắp xếp theo `CategoryId` hoặc cột khác nếu cần
+                .Skip(recSkip)
+                .Take(pageSize)
+                .ToListAsync();
 
-                ViewBag.Pager = pager;
+            // Tạo đối tượng phân trang
+            var pager = new Paginate(recsCount, pg, pageSize);
+            ViewBag.Pager = pager;
 
-                return View(data);
-            
+            return View(data);
         }
+
         [HttpGet]
         public IActionResult Create()
         {

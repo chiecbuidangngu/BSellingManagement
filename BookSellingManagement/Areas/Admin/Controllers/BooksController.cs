@@ -19,31 +19,48 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             _dataContext = context;
             _webHostEnvironment = webHostEnvironment;
         }
-        public async Task<IActionResult> Index(int pg = 1)
+        public async Task<IActionResult> Index(int pg = 1, string search = "")
         {
-           
-            const int pageSize = 10;    
+            const int pageSize = 10;
+
             if (pg < 1)
             {
                 pg = 1;
             }
 
+            // Lấy danh sách sách từ cơ sở dữ liệu, bao gồm thông tin thể loại và tác giả
             var books = _dataContext.Books
                 .Include(b => b.Category)
-                .Include(b => b.Author);
+                .Include(b => b.Author)
+                .AsQueryable();
+
+            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+            if (!string.IsNullOrEmpty(search))
+            {
+                books = books.Where(b => b.BookName.Contains(search) ||
+                                         b.Category.CategoryName.Contains(search) ||
+                                         b.Author.AuthorName.Contains(search));
+                ViewBag.Search = search; // Để hiển thị lại từ khóa trên giao diện
+            }
+
+            // Tính tổng số bản ghi sau khi lọc
             int recsCount = await books.CountAsync();
             int recSkip = (pg - 1) * pageSize;
-   
+
+            // Phân trang
             var data = await books
                 .OrderBy(b => b.BookId)
                 .Skip(recSkip)
                 .Take(pageSize)
                 .ToListAsync();
 
+            // Tạo đối tượng phân trang
             var pager = new Paginate(recsCount, pg, pageSize);
             ViewBag.Pager = pager;
+
             return View(data);
         }
+
 
         [HttpGet]
         public IActionResult Create()

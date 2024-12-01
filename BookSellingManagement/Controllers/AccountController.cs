@@ -51,16 +51,17 @@ namespace BookSellingManagement.Controllers
                        var roles = await _userManager.GetRolesAsync(user);
 
                        // Điều hướng dựa trên vai trò
-                       if (roles.Contains("Quản trị viên && Nhân viên"))
+                       if (roles.Contains("Người dùng"))
                        {
-                         
-                            return RedirectToAction("Index", "Home", new { area = "admin" });
+
+                            return RedirectToAction("Index", "Books");
                         }
 
                         else
                        {
 
-                            return RedirectToAction("Index", "Books");
+                         
+                            return RedirectToAction("Index", "Home", new { area = "admin" });
                         }
                    }
                }
