@@ -205,8 +205,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             return View(category);
         }
 
-
-
         public async Task<IActionResult> Delete(string CategoryId)
         {
             // Tìm sách trong cơ sở dữ liệu

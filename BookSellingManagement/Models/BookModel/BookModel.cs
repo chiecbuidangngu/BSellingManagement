@@ -37,7 +37,7 @@ namespace BookSellingManagement.Models.Book
 
         public string Location { get; set; }
 
-        public string Image { get; set; } = "noimage.jpg";
+        public string Image { get; set; }
         [Required(ErrorMessage = "Yêu cầu chọn tác giả")]
         public string AuthorId { get; set; }
         [Required(ErrorMessage = "Yêu cầu chọn thể loại")]
@@ -50,6 +50,6 @@ namespace BookSellingManagement.Models.Book
         [FileExtension]
         [Required(ErrorMessage = "Yêu cầu tải ảnh sách")]
 
-        public IFormFile ImageUpload {  get; set; }
+        public IFormFile? ImageUpload {  get; set; }
     }
 }

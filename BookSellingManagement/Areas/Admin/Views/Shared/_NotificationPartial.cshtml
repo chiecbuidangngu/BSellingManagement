@@ -1,4 +1,4 @@
-﻿<!-- Toast Notification -->
+﻿
 <style>
     #toast.toast-success .toast-body {
         background-color: #198754 !important;
@@ -19,7 +19,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
         <div class="toast-body" id="toastMessage">
-            <!-- Toast message content will be dynamically updated here -->
+
         </div>
     </div>
 </div>
@@ -27,7 +27,6 @@
 <script>
     $(document).ready(function () {
         
-        // Display TempData success or error messages, if present
         var successMessage = '@Html.Raw(TempData["SuccessMessage"])';
         var errorMessage = '@Html.Raw(TempData["ErrorMessage"])';
 

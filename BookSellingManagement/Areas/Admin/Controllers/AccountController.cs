@@ -111,10 +111,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             await _signInManager.SignOutAsync();
             return Redirect(returnUrl);
         }
-       
-        
-
-
 
     }
 }

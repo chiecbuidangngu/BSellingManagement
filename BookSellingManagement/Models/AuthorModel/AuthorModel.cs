@@ -16,7 +16,7 @@ namespace BookSellingManagement.Models.Authors
         public string AuthorName { set; get; } = null!;
         public string AuthorSlug { set; get; } = null!;
         public string? Information { set; get; }
-        public string Image { get; set; } = "noimage.jpg";
+        public string Image { get; set; }
 
         public bool IsActive { get; set; }
 
@@ -24,8 +24,8 @@ namespace BookSellingManagement.Models.Authors
         [FileExtension]
         [Required(ErrorMessage = "Yêu cầu tải ảnh sách")]
 
-        public IFormFile ImageUpload { get; set; }
-        public int SumBook { set; get; }
+        public IFormFile? ImageUpload { get; set; }
+
         public IEnumerable<BookModel>? Books { get; set; }
     }
 }

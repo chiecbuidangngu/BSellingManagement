@@ -1,4 +1,5 @@
 ﻿
+using BookSellingManagement.Areas.Admin.Reponsitory;
 using BookSellingManagement.Models;
 using BookSellingManagement.Models.OrderModel;
 using BookSellingManagement.Models.ViewModels;
@@ -12,9 +13,11 @@ using System.Security.Claims;
 public class CheckoutController : Controller
 {
     private readonly DataContext _dataContext;
-    public CheckoutController(DataContext context)
+    private readonly IEmailSender _emailSender;
+    public CheckoutController(DataContext context, IEmailSender emailSender)
     {
         _dataContext = context;
+        _emailSender = emailSender;
     }
     public IActionResult Index()
     {
@@ -44,13 +47,13 @@ public class CheckoutController : Controller
             }
 
             // Tạo OrderCode với tiền tố DH + năm + số thứ tự
-            string yearPrefix = "DH" + DateTime.Now.Year.ToString(); // DH2024
+            string yearPrefix = "DH" + DateTime.Now.Year.ToString(); 
             var latestOrder = await _dataContext.Orders
                                                 .Where(o => o.OrderCode.StartsWith(yearPrefix))
                                                 .OrderByDescending(o => o.OrderCode)
                                                 .FirstOrDefaultAsync();
 
-            int codeNumber = 1; // Mặc định là 1 nếu chưa có đơn hàng nào
+            int codeNumber = 1; 
             if (latestOrder != null)
             {
                 string latestCode = latestOrder.OrderCode.Substring(yearPrefix.Length);
@@ -69,7 +72,6 @@ public class CheckoutController : Controller
                 return RedirectToAction("Index");
             }
 
-            // Tính tổng tiền cho đơn hàng
             int totalAmount = cartItems.Sum(item => item.Amount);
 
             // Tạo đơn hàng
@@ -78,21 +80,22 @@ public class CheckoutController : Controller
                 OrderId = Guid.NewGuid().ToString(),
                 OrderCode = orderCode,
                 Username = userEmail,
-                Status = 1,
+                Status = paymentMethod == "COD" ? 1 : 2, // Nếu COD thì trạng thái = 1, nếu VNPAY thì trạng thái = 2
                 CreateDate = DateTime.Now,
                 TotalAmount = totalAmount,
                 PhoneNumber = phoneNumber, // Lấy từ form
                 Address = addressDetail,
                 FullName = fullName,
-                PaymentMethod = paymentMethod// Lấy từ form
+                PaymentMethod = paymentMethod // Lấy từ form
             };
 
             _dataContext.Add(orderItem);
             await _dataContext.SaveChangesAsync();
 
-            // Tạo chi tiết đơn hàng từ giỏ hàng
+            // Tạo chi tiết đơn hàng từ giỏ hàng và cập nhật SoldQuantity
             foreach (var cart in cartItems)
             {
+              
                 var orderDetails = new OrderDetailModel
                 {
                     Id = Guid.NewGuid().ToString(),
@@ -103,10 +106,31 @@ public class CheckoutController : Controller
                     Quantity = cart.Quantity
                 };
                 _dataContext.Add(orderDetails);
-                await _dataContext.SaveChangesAsync();
+
+                // Cập nhật SoldQuantity trong bảng sách
+                var book = await _dataContext.Books.FirstOrDefaultAsync(b => b.BookId == cart.BookId);
+                if (book != null)
+                {
+                    book.SoldQuantity += cart.Quantity; 
+                    _dataContext.Books.Update(book);
+                }
             }
 
-            // Xóa giỏ hàng sau khi đặt hàng thành công
+            await _dataContext.SaveChangesAsync();
+            // Gửi email xác nhận đơn hàng cho người dùng
+            string subject = "Xác nhận đơn hàng #" + orderCode;
+            string body = $"Chào {fullName},\n\n" +
+                          $"Cảm ơn bạn đã đặt hàng tại cửa hàng chúng tôi. Đơn hàng của bạn đã được tiếp nhận với mã đơn hàng: {orderCode}. " +
+                          $"Dưới đây là thông tin đơn hàng của bạn:\n\n" +
+                          $"Địa chỉ: {addressDetail}\n" +
+                          $"Số điện thoại: {phoneNumber}\n" +
+                          $"Tổng tiền: {totalAmount} VNĐ\n\n" +
+                          $"Chúng tôi sẽ thông báo cho bạn khi đơn hàng được xử lý.\n\n" +
+                          "Trân trọng,\n HuTa Book";
+
+           
+            await _emailSender.SendEmailAsync(userEmail, subject, body);
+           
             HttpContext.Session.Remove("Cart");
 
             if (paymentMethod == "COD")
@@ -115,20 +139,12 @@ public class CheckoutController : Controller
             }
             else
             {
- 
                 return RedirectToAction("VNPayPayment", "Checkout");
             }
         }
-      
-
     }
     public IActionResult VNPayPayment()
     {
         return View(); 
     }
-
-
-
-
-
 }

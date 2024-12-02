@@ -205,8 +205,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             TempData["ErrorMessage"] = "Model đang bị lỗi. Vui lòng kiểm tra lại.";
             return View(author);
         }
-
-
         public async Task<IActionResult> Delete(string AuthorId)
         {
             AuthorModel author = await _dataContext.Authors.FindAsync(AuthorId);

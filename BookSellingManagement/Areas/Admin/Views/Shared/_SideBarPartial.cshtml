@@ -9,10 +9,11 @@
 </head>
 <body>
     <!-- Sidebar -->
-    <div class="sidebar-left">
+    <div class="sidebar-left" id="sidebar">
         <div class="logo">
             <i class="fas fa-book-open"></i>
-            <strong>HuTa</strong></div>
+            <strong>HuTa</strong>
+        </div>
         <ul class="nav flex-column">
             <!-- Trang chủ -->
             <li class="nav-item">
@@ -80,7 +81,12 @@
             background-color: #0d6efd;
             color: #fff;
             padding-top: 20px;
+            transition: width 0.3s ease; /* Thêm hiệu ứng thu gọn */
         }
+
+            .sidebar-left.collapsed {
+                width: 60px; /* Kích thước sidebar khi thu gọn */
+            }
 
             .sidebar-left a {
                 color: #fff;
@@ -88,12 +94,17 @@
                 font-size: 16px;
                 display: block;
                 padding: 10px 20px;
+                transition: font-size 0.3s ease;
             }
 
-                .sidebar-left a:hover {
-                    background-color: #fff;
-                    color: #0d6efd;
-                }
+            .sidebar-left.collapsed a {
+                font-size: 12px; /* Giảm kích thước font khi sidebar thu gọn */
+            }
+
+            .sidebar-left a:hover {
+                background-color: #fff;
+                color: #0d6efd;
+            }
 
             .sidebar-left .nav-item {
                 padding: 5px 0;
@@ -136,6 +147,11 @@
             $('.toggle-submenu').click(function (e) {
                 e.preventDefault();
                 $(this).parent('.nav-item').toggleClass('open');
+            });
+
+            // Toggle sidebar collapse
+            $('.fas.fa-book-open').click(function () {
+                $('#sidebar').toggleClass('collapsed');
             });
         });
     </script>

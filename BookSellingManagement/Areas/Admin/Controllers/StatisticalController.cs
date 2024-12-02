@@ -81,7 +81,8 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             ViewBag.MonthlyRevenue = monthlyData.Select(m => m.TotalRevenue).ToList();
             ViewBag.MonthlySales = monthlyData.Select(m => new
             {
-                Month = m.Month
+                Month = m.Month,
+                Year = m.Year
             }).ToList();
 
 

@@ -11,6 +11,7 @@ namespace BookSellingManagement.Models
 
         [Required(ErrorMessage = "Nhập Email")]
         [EmailAddress(ErrorMessage = "Email không hợp lệ")]
+  
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Nhập mật khẩu")]

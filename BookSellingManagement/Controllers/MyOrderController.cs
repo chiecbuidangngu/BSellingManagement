@@ -9,14 +9,10 @@ namespace BookSellingManagement.Controllers
 {
     public class MyOrderController : Controller
     {
-
-
         private readonly DataContext _dataContext;
         public MyOrderController(DataContext context)
         {
-
             _dataContext = context;
-
         }
         public async Task<IActionResult> Index(int pg = 1)
         {
@@ -27,52 +23,67 @@ namespace BookSellingManagement.Controllers
             }
 
             var userEmail = User.FindFirstValue(ClaimTypes.Email);
-
-            // Lấy danh sách đơn hàng của người dùng, đã sắp xếp theo ngày tạo (mới nhất đầu tiên)
             var ordersQuery = _dataContext.Orders
                 .Where(od => od.Username == userEmail)
                 .OrderByDescending(od => od.CreateDate);
 
-            // Tính tổng số bản ghi
             int recsCount = await ordersQuery.CountAsync();
-
-            // Tính số bản ghi cần bỏ qua dựa trên trang hiện tại
             int recSkip = (pg - 1) * pageSize;
 
-            // Lấy dữ liệu của trang hiện tại
             var orders = await ordersQuery
                 .Skip(recSkip)
                 .Take(pageSize)
                 .ToListAsync();
 
-            // Tạo đối tượng phân trang
             var pager = new Paginate(recsCount, pg, pageSize);
 
-            // Truyền pager và danh sách đơn hàng vào ViewBag
             ViewBag.Pager = pager;
             ViewBag.UserEmail = userEmail;
 
             return View(orders);
         }
-      
+
         public async Task<IActionResult> CancelOrder(string orderId)
         {
             var order = await _dataContext.Orders
-                                          .FirstOrDefaultAsync(o => o.OrderId == orderId);
+                                           .FirstOrDefaultAsync(o => o.OrderId == orderId);
 
             if (order == null)
             {
                 return NotFound();
             }
-            if (order.Status == 1)
+
+            if (order.Status == 1) 
             {
+
+                var orderDetails = await _dataContext.OrderDetails
+                                                     .Where(od => od.OrderCode == order.OrderCode)
+                                                     .ToListAsync();
+
+              
+                foreach (var detail in orderDetails)
+                {
+                    var book = await _dataContext.Books.FirstOrDefaultAsync(b => b.BookId == detail.BookId);
+                    if (book != null)
+                    {
+                        book.SoldQuantity -= detail.Quantity;
+                        if (book.SoldQuantity < 0)
+                        {
+                            book.SoldQuantity = 0; 
+                        }
+                        _dataContext.Books.Update(book);
+                    }
+                }
+
                 order.Status = 3;
                 await _dataContext.SaveChangesAsync();
 
                 TempData["SuccessMessage"] = "Đơn hàng đã được hủy thành công.";
             }
+
             return RedirectToAction("Index");
         }
+
         public async Task<IActionResult> ConfirmReceipt(string orderId)
         {
             // Tìm đơn hàng theo orderId
@@ -91,7 +102,7 @@ namespace BookSellingManagement.Controllers
                 await _dataContext.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Xác nhận đã nhận đơn hàng thành công";
             }
-            return RedirectToAction("MyOrders");
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> OrderDetail(string orderId)
@@ -105,10 +116,7 @@ namespace BookSellingManagement.Controllers
                 return NotFound();
             }
 
-            // Lấy OrderCode của đơn hàng vừa tìm được
             var orderCode = order.OrderCode;
-
-            // Lấy chi tiết đơn hàng từ OrderDetails bằng OrderCode
             var orderDetails = await _dataContext.OrderDetails
                                                   .Where(od => od.OrderCode == orderCode)
                                                   .ToListAsync();
@@ -126,10 +134,7 @@ namespace BookSellingManagement.Controllers
                 od.Price
             }).ToList();
 
-            // Truyền danh sách orderItems vào ViewBag
             ViewBag.OrderItems = orderItems;
-
-            // Trả về view với thông tin đơn hàng
             return View(order);
         }
 

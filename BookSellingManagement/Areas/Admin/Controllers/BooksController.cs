@@ -61,7 +61,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             return View(data);
         }
 
-
         [HttpGet]
         public IActionResult Create()
         {
@@ -134,9 +133,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
             TempData["ErrorMessage"] = "Model đang bị lỗi. Vui lòng kiểm tra lại.";
             return View(book);
         }
-
-
-
         public async Task<IActionResult> Edit(string BookId)
         {
             BookModel book = await _dataContext.Books.FirstOrDefaultAsync(b => b.BookId == BookId);
@@ -255,8 +251,6 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             return View(book);
         }
-
-
 
     }
 }

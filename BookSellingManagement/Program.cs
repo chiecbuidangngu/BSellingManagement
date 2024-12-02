@@ -1,4 +1,5 @@
-﻿using BookSellingManagement.Models;
+﻿using BookSellingManagement.Areas.Admin.Reponsitory;
+using BookSellingManagement.Models;
 using BookSellingManagement.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -14,7 +15,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddIdentity<AppUserModel, IdentityRole>()
     .AddEntityFrameworkStores<DataContext>()
     .AddDefaultTokenProviders();
-
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 // Cấu hình session
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>

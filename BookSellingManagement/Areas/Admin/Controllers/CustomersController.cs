@@ -19,7 +19,7 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
         public IActionResult Index(int pg = 1, string search = "")
         {
-            const int pageSize = 10; // Số lượng khách hàng mỗi trang
+            const int pageSize = 10; 
 
             if (pg < 1)
             {
@@ -36,33 +36,33 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                                   select new
                                   {
                                       Username = grouped.Key,
-                                      UserName = grouped.FirstOrDefault().user.UserName, // Lấy tên người dùng đầu tiên trong nhóm
-                                      PhoneNumber = grouped.FirstOrDefault().user.PhoneNumber, // Lấy số điện thoại người dùng đầu tiên trong nhóm
-                                      Revenue = grouped.Select(g => g.order.TotalAmount).Distinct().Sum(), // Chỉ tính TotalAmount một lần cho mỗi đơn hàng
-                                      TotalOrders = grouped.Select(g => g.order.OrderCode).Distinct().Count(), // Đếm số đơn hàng duy nhất
-                                      TotalBooks = grouped.Sum(g => g.detail != null ? g.detail.Quantity : 0) // Tổng số sách trong các chi tiết đơn hàng
+                                      UserName = grouped.FirstOrDefault().user.UserName, 
+                                      PhoneNumber = grouped.FirstOrDefault().user.PhoneNumber, 
+                                      Revenue = grouped.Select(g => g.order.TotalAmount).Distinct().Sum(), 
+                                      TotalOrders = grouped.Select(g => g.order.OrderCode).Distinct().Count(),
+                                      TotalBooks = grouped.Sum(g => g.detail != null ? g.detail.Quantity : 0) 
                                   });
 
-            // Áp dụng bộ lọc tìm kiếm nếu có từ khóa
+        
             if (!string.IsNullOrEmpty(search))
             {
                 customersQuery = customersQuery.Where(c =>
                     c.UserName.Contains(search) ||
                     c.PhoneNumber.Contains(search));
 
-                ViewBag.Search = search; // Lưu từ khóa tìm kiếm để hiển thị lại trên giao diện
+                ViewBag.Search = search; 
             }
 
             // Tổng số khách hàng sau khi lọc
             int recsCount = customersQuery.Count();
 
-            // Tính toán phân trang
+        
             var pager = new Paginate(recsCount, pg, pageSize);
             int recSkip = (pg - 1) * pageSize;
 
-            // Lấy dữ liệu phân trang
+          
             var customers = customersQuery
-                .OrderBy(c => c.Username) // Sắp xếp theo `Username` hoặc cột khác nếu cần
+                .OrderBy(c => c.Username)
                 .Skip(recSkip)
                 .Take(pager.PageSize)
                 .ToList();
@@ -72,15 +72,10 @@ namespace BookSellingManagement.Areas.Admin.Controllers
 
             return View(customers);
         }
-
-
-
-
-
         public IActionResult Orders(string username)
         {
             var orders = (from order in _dataContext.Orders
-                          where order.Username == username && order.Status != 3 // Lọc các đơn hàng không bị hủy
+                          where order.Username == username && order.Status != 3 
                           select new
                           {
                               OrderCode = order.OrderCode,
@@ -89,34 +84,60 @@ namespace BookSellingManagement.Areas.Admin.Controllers
                               TotalAmount = order.TotalAmount
                           }).ToList();
 
-            return View(orders); // Trả về View hoặc PartialView
+            return View(orders); 
         }
 
+       public IActionResult Books(string username)
+{
+    // Lấy danh sách sách đã mua
+    var books = (from order in _dataContext.Orders
+                 where order.Username == username && order.Status != 3
+                 join orderDetail in _dataContext.OrderDetails on order.OrderCode equals orderDetail.OrderCode into orderDetails
+                 from detail in orderDetails.DefaultIfEmpty()
+                 join book in _dataContext.Books on detail.BookId equals book.BookId
+                 join category in _dataContext.Categories on book.CategoryId equals category.CategoryId
+                 where detail != null
+                 group new { book, detail, category } by new
+                 {
+                     book.BookCode,
+                     book.BookName,
+                     book.Image,
+                     category.CategoryId,
+                     category.CategoryName // Tên thể loại
+                 } into groupedBooks
+                 select new
+                 {
+                     BookCode = groupedBooks.Key.BookCode,
+                     BookName = groupedBooks.Key.BookName,
+                     CategoryId = groupedBooks.Key.CategoryId,
+                     CategoryName = groupedBooks.Key.CategoryName,
+                     Quantity = groupedBooks.Sum(g => g.detail.Quantity),
+                     Image = groupedBooks.Key.Image
+                 }).ToList();
 
-        public IActionResult Books(string username)
+    // Xác định danh sách thể loại yêu thích (nhiều thể loại nếu có tổng số lượng bằng nhau)
+    var favoriteGenres = books
+        .GroupBy(b => new { b.CategoryId, b.CategoryName })
+        .Select(g => new
         {
-            var books = (from order in _dataContext.Orders
-                         where order.Username == username && order.Status != 3 // Lọc đơn hàng không bị hủy
-                         join orderDetail in _dataContext.OrderDetails on order.OrderCode equals orderDetail.OrderCode into orderDetails
-                         from detail in orderDetails.DefaultIfEmpty()
-                         join book in _dataContext.Books on detail.BookId equals book.BookId // Join với bảng Books để lấy BookName
-                         where detail != null
-                         select new
-                         {
-                             BookCode = book.BookCode,          
-                             BookName = book.BookName,      
-                             Quantity = detail.Quantity,    
-                             Image = book.Image             
-                         }).ToList();
+            CategoryId = g.Key.CategoryId,
+            CategoryName = g.Key.CategoryName,
+            TotalQuantity = g.Sum(b => b.Quantity)
+        })
+        .ToList();
 
-            return View(books);
-        }
+    // Tìm tổng số lượng lớn nhất
+    var maxQuantity = favoriteGenres.Max(g => g.TotalQuantity);
 
+    // Lọc ra các thể loại có tổng số lượng bằng với tổng lớn nhất
+    var topGenres = favoriteGenres
+        .Where(g => g.TotalQuantity == maxQuantity)
+        .ToList();
 
-
-
-
-
+    // Truyền dữ liệu vào View
+    ViewBag.FavoriteGenres = topGenres; // Lưu danh sách thể loại yêu thích vào ViewBag
+    return View(books); // Truyền danh sách sách vào View
+}
 
 
 
